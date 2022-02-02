@@ -1,0 +1,5237 @@
+var a=100;
+console.log(a);
+const a1=900;
+console.log(a1);
+let a2=102;
+console.log(a2);
+for(var b=0;b<11;b++){
+console.log(b);
+}
+console.log(b);
+for(let c=0;c<11;c++){
+console.log(c);
+}
+console.log(typeof a);
+let s='string is king';
+console.log(typeof s);
+let cc=true;
+console.log(cc);
+let rr;
+console.log(typeof rr);
+let rr2=null;
+console.log(typeof rr2);
+while(a<20){
+console.log(a);
+a++;
+}
+console.log(a);
+let g=1;
+while(g<10){
+console.log(g);
+g++;
+}
+let g1=1;
+do{
+console.log(g1);
+g1++;
+}while(g1<10)
+let arr=['sumalya','karthik','ahmed','zameer','christenson'];
+for(let r of arr){
+console.log(r);
+}
+for(let r in arr){
+console.log(arr[r]);
+}
+let arr2=[1,2,3,4,5,6,7,8,9,10];
+for(let r of arr2){
+console.log(r);
+}
+function aa(){
+console.log('hello');
+}
+aa();
+const ab=function(){
+console.log('hello');
+}
+ab();
+const ac=()=>{
+console.log('hello');
+}
+ac();
+arr.forEach(function(n){console.log(n)});
+arr.forEach(n=>console.log(n));
+arr2.forEach(n=>console.log(n));
+function dd(n){
+console.log(n);
+}
+arr.forEach(dd);
+arr.map(n=>console.log(n));
+(function(){console.log('hello')})()
+(function(){for(let i=0;i<10;i++){console.log(i);}})()
+function ffa(...a){
+console.log(a);
+}
+ffa(9);
+ffa([9,10]);
+ffa(12,13,14);
+function ffb(...a,b,c){
+function ffb(a,...b,c){
+function ffb(a,b,...c){
+console.log(a);
+}
+const [a,b]=[a:10,b:20];
+const {a11,b11}={a11:10,b11:20};
+console.log(a11);
+console.log(b11);
+const {a12,b12,c12}=[a12:'hello',b12:true,c12:[12,13,141,5]};
+const {a12,b12,c12}={a12:'hello',b12:true,c12:[12,13,141,5]};
+console.log(a12)
+console.log(b12)
+console.log(c12)
+const {a13,b13}={a13:{'name':'gani','email':'gani@yahoo.com'},b13:'hello'}
+console.log(a13)
+console.log(b13)
+console.log(a13.name)
+
+
+////
+
+var,let, const
+
+//normal function
+function ff(){
+console.log('hai');
+}
+//anonymous function
+const ff=function(){
+console.log('hai');
+}
+//arrow operator function
+const ff=()=>{
+console.log('hai');
+}
+
+Lambdas are short cuts to anonymous notation
+
+for
+forin
+forof
+forEach
+while
+do while
+map
+
+
+IIFE(Immediately Instantiable Function Expression):
+
+(
+function(){
+console.log('hello');
+}
+)()
+
+Anonymous
+normal
+lambda
+iife
+
+spread operator
+
+
+///
+
+var a=100;
+console.log(a);
+const a1=900;
+console.log(a1);
+let a2=102;
+console.log(a2);
+for(var b=0;b<11;b++){
+console.log(b);
+}
+console.log(b);
+for(let c=0;c<11;c++){
+console.log(c);
+}
+console.log(typeof a);
+let s='string is king';
+console.log(typeof s);
+let cc=true;
+console.log(cc);
+let rr;
+console.log(typeof rr);
+let rr2=null;
+console.log(typeof rr2);
+while(a<20){
+console.log(a);
+a++;
+}
+console.log(a);
+let g=1;
+while(g<10){
+console.log(g);
+g++;
+}
+let g1=1;
+do{
+console.log(g1);
+g1++;
+}while(g1<10)
+let arr=['sumalya','karthik','ahmed','zameer','christenson'];
+for(let r of arr){
+console.log(r);
+}
+for(let r in arr){
+console.log(arr[r]);
+}
+let arr2=[1,2,3,4,5,6,7,8,9,10];
+for(let r of arr2){
+console.log(r);
+}
+function aa(){
+console.log('hello');
+}
+aa();
+const ab=function(){
+console.log('hello');
+}
+ab();
+const ac=()=>{
+console.log('hello');
+}
+ac();
+arr.forEach(function(n){console.log(n)});
+arr.forEach(n=>console.log(n));
+arr2.forEach(n=>console.log(n));
+function dd(n){
+console.log(n);
+}
+arr.forEach(dd);
+arr.map(n=>console.log(n));
+(function(){console.log('hello')})()
+(function(){for(let i=0;i<10;i++){console.log(i);}})()
+function ffa(...a){
+console.log(a);
+}
+ffa(9);
+ffa([9,10]);
+ffa(12,13,14);
+function ffb(...a,b,c){
+function ffb(a,...b,c){
+  function ffb(a,b,...c){
+    console.log(a);
+    }
+  const [a,b]=[a:10,b:20];
+  const {a11,b11}={a11:10,b11:20};
+  console.log(a11);
+  console.log(b11);
+  const {a12,b12,c12}=[a12:'hello',b12:true,c12:[12,13,141,5]};
+const {a12,b12,c12}={a12:'hello',b12:true,c12:[12,13,141,5]};
+console.log(a12)
+console.log(b12)
+console.log(c12)
+const {a13,b13}={a13:{'name':'gani','email':'gani@yahoo.com'},b13:'hello'}
+console.log(a13)
+console.log(b13)
+console.log(a13.name)
+let myfun=new Function('a','b','return a+b');
+console.log(myfun(12,13));
+let myfun2=new Function('a','return Math.sqrt(a)');
+console.log(myfun2(2));
+let myfun3=new Function('a','b','return Math.pow(a,b)');
+console.log(myfun3(2,3));
+let myfun4=(a,b)=>{return Math.pow(a,b)}
+console.log(myfun4(2,3));
+function Cars(name,brand){
+this.name=name;
+this.brand=brand;
+}
+let cara=new Cars('Octavia','Skoda');
+console.log(cara);
+console.log(cara.name);
+console.log(cara['name']);
+let carb=new Cars('emapala','lincoln');
+console.log(JSON.stringify(carb));
+function Person(name,email)[
+function Person(name,email){
+this.name=name;
+this.email.email;
+}
+function Person(name,email){
+this.name=name;
+this.email=email;
+}
+let perb=new Person('Hanifa','hanifa@egypt.com');
+console.log(JSON.stringify(perb));
+class Book{
+constructor(name,author){
+  this.name=name;
+  this.author=author;
+  }
+}
+let book=new Book('Alice In Wonderland','Lewis Carrol');
+console.log(JSON.stringify(book));
+class PhysicsBook extends Book{
+constructor(name,author,sub){
+  super(name,author);
+  this.sub=sub;
+  }
+}
+let pha=new PhysicsBook('Nuclear Physics','Kensington','Atomic Physics');
+console.log(JSON.stringify(pha));
+
+///
+
+class AAA {
+    constructor(name) {
+        console.log('Parent Constructor');
+        this.name = name;
+    }
+    fetA() {
+        console.log('Hello Iam from Parent');
+    }
+}
+
+class BBB extends AAA {
+    constructor(name, email) {
+        super(name);
+        console.log('Child Constructor');
+        this.email = email;
+    }
+    fetA() {
+        console.log('Hello Iam Child Class');
+    }
+}
+
+class CCC {
+    constructor(name, brand) {
+        this.name = name;
+        this.brand = brand;
+    }
+    static fetB() {
+        console.log('Hello Iam Static Method');
+    }
+}
+
+let ccc = new CCC('Hyundai', 'Santro');
+// ccc.fetB();
+CCC.fetB();
+
+var bb = new BBB('sa', 'sa@yahoo.com');
+bb.fetA();
+
+///
+
+const { aa } = require("./filetwo");
+const { gg } = require("./filethree");
+var hh = require('./filefour');
+var mymod = require('./filefive');
+
+// var hha = new hh();
+var hhb = new mymod();
+// hha.aaa();
+// hha.bbb();
+// hha.ccc();
+
+let obj1 = new hhb.ClsA('ganesh', 'ganesh@yahoo.com');
+let obj2 = new hhb.Cars('Benz', 'Mercedes');
+console.log(JSON.stringify(obj1));
+console.log(JSON.stringify(obj2));
+
+
+
+// console.log(gg());
+
+// class AAA {
+//     constructor(name) {
+//         console.log('Parent Constructor');
+//         this.name = name;
+//     }
+//     fetA() {
+//         console.log('Hello Iam from Parent');
+//     }
+// }
+
+// class BBB extends AAA {
+//     constructor(name, email) {
+//         super(name);
+//         console.log('Child Constructor');
+//         this.email = email;
+//     }
+//     fetA() {
+//         console.log('Hello Iam Child Class');
+//     }
+// }
+
+// class CCC {
+//     constructor(name, brand) {
+//         this.name = name;
+//         this.brand = brand;
+//     }
+//     static fetB() {
+//         console.log('Hello Iam Static Method');
+//     }
+// }
+
+// let ccc = new CCC('Hyundai', 'Santro');
+// // ccc.fetB();
+// CCC.fetB();
+
+// var bb = new BBB('sa', 'sa@yahoo.com');
+// bb.fetA();
+
+// let ap = aa;
+// console.log(ap);
+
+//
+
+module.exports.aa = 'I have been struck by a lightening alas i survived';
+
+//
+
+function fffa() {
+    return Math.sqrt(2);
+}
+
+module.exports.gg = fffa;
+
+//
+module.exports = function () {
+    this.aaa = function () {
+        console.log('First Function');
+    }
+    this.bbb = function () {
+        console.log('Second Function');
+    }
+    this.ccc = function () {
+        console.log('Third Function');
+    }
+}
+
+///
+module.exports = function () {
+    this.ClsA = class {
+        constructor(name, email) {
+            this.name = name;
+            this.email = email;
+        }
+    }
+
+    this.Cars = function (name, brand, year) {
+        this.name = name;
+        this.brand = brand;
+        this.year = year;
+    }
+}
+
+///
+
+// let set = new Set();
+// for (let i = 1; i <= 20; i++) {
+//     set.add(i);
+// }
+// for (let i = 1; i <= 20; i++) {
+//     set.add(i);
+// }
+// for (let i = 1; i <= 20; i++) {
+//     set.add(i);
+// }
+// console.log(set);//removes duplicates
+
+// for (const itr of set) {
+//     console.log(itr);
+// }
+// set.forEach(n => console.log(n));
+let map = new Map();
+let arr1 = [1, 2, 3, 4, 5];
+let arr2 = ['hanifa', 'jubaid', 'manisha', 'kaivalya', 'ramesh'];
+for (let i = 0; i < arr1.length; i++) {
+    map.set(arr1[i], arr2[i]);
+}
+// console.log(map);
+
+// for (let i = 0; i < arr1.length; i++) {
+//     console.log(arr1[i] + '\t\t' + map.get(arr1[i]));
+// }
+
+// console.log(map.entries());
+console.log(map);
+// map.forEach(n => console.log(n));
+
+//Stack
+let arra = ['san', 'man', 'tan'];
+arra.push('lan');
+console.log(arra);
+arra.pop();
+console.log(arra);
+
+let arrb = Array.from(['satish', 'geeta', 'seeta', 'ghani', 'abdul']);
+console.log(arrb);
+let arrc = Array.from(map.keys());
+console.log(arrc);
+let arrd = Array.from(map.values());
+// console.log(arrd);
+arrd.forEach(n => console.log(n));
+let arre = Array.from(map.entries());
+// console.log(arre);
+arre.forEach(n => console.log(n[0] + ' ' + n[1]))
+
+
+///
+
+// let set = new Set();
+// for (let i = 1; i <= 20; i++) {
+//     set.add(i);
+// }
+// for (let i = 1; i <= 20; i++) {
+//     set.add(i);
+// }
+// for (let i = 1; i <= 20; i++) {
+//     set.add(i);
+// }
+// console.log(set);//removes duplicates
+
+// for (const itr of set) {
+//     console.log(itr);
+// }
+// set.forEach(n => console.log(n));
+let map = new Map();
+let arr1 = [1, 2, 3, 4, 5];
+let arr2 = ['hanifa', 'jubaid', 'manisha', 'kaivalya', 'ramesh'];
+for (let i = 0; i < arr1.length; i++) {
+    map.set(arr1[i], arr2[i]);
+}
+// console.log(map);
+
+// for (let i = 0; i < arr1.length; i++) {
+//     console.log(arr1[i] + '\t\t' + map.get(arr1[i]));
+// }
+
+// console.log(map.entries());
+console.log(map);
+// map.forEach(n => console.log(n));
+
+//Stack
+let arra = ['san', 'man', 'tan'];
+arra.push('lan');
+console.log(arra);
+arra.pop();
+console.log(arra);
+
+let arrb = Array.from(['satish', 'geeta', 'seeta', 'ghani', 'abdul']);
+console.log(arrb);
+let arrc = Array.from(map.keys());
+console.log(arrc);
+let arrd = Array.from(map.values());
+// console.log(arrd);
+arrd.forEach(n => console.log(n));
+let arre = Array.from(map.entries());
+// console.log(arre);
+arre.forEach(n => console.log(n[0] + ' ' + n[1]));
+let ad = false;
+// if (ad) {
+//     console.log('It is true');
+// } else {
+//     console.log('It is false');
+// }
+
+//ternary operator
+ad ? console.log('it is true') : console.log('it is false');
+
+let prom1 = new Promise((resolve, reject) => {
+    resolve('Hai there')
+});
+
+prom1.then(console.log);
+
+async function ddd() {
+    return 'Hello Iam Async';
+}
+
+let prom2 = new Promise((resolve, reject) => {
+    resolve(ddd());
+})
+
+prom2.then(console.log);
+console.log('***********');
+// let prom3 = new Promise((resolve, reject) => {
+//     resolve(setTimeout(() => {
+//         ddd()
+//     }, 5000))
+// })
+// prom3.then(console.log);
+
+let proma = new Promise((resolve, reject) => {
+    resolve('First Prom')
+})
+let promb = new Promise((resolve, reject) => {
+    resolve('Second Prom')
+})
+let promc = new Promise((resolve, reject) => {
+    resolve('Third Prom')
+})
+let promd = new Promise((resolve, reject) => {
+    resolve('Four Prom')
+})
+
+let arrprom = [proma, promb, promc, promd];
+// Promise.all(arrprom).then(n => {
+//     console.log(n);
+// });
+arrprom.forEach(n => {
+    n.then(console.log)
+})
+
+///
+
+let arr = ['satish', 'satish', 'satish', 'satish', 'karim', 'tejal', 'jugal', 'hari', 'ali', 'wahid', 'joseph'];
+
+// let itr = arr[Symbol.iterator]();
+
+// for (let b = itr.next(); b.done !== true; b = itr.next()) {
+//     console.log(b.value);
+// }
+let set = new Set();
+arr.forEach(n => set.add(n));
+
+let iter = set[Symbol.iterator]();
+for (let b = iter.next(); b.done !== true; b = iter.next()) {
+    console.log(b.value);
+}
+
+var t = 'ssss';
+// let ss=new Symbol(t);
+console.log(Symbol(t) === Symbol(t));
+
+let arra = [1, 2, 3, 4, 5];
+let arrb = ['a', 'e', 'i', 'o', 'u'];
+
+let map = new Map();
+for (let i = 0; i < arra.length; i++) {
+    map.set(arra[i], arrb[i]);
+}
+
+// let tt = map.keys();
+
+// let iter2 = tt[Symbol.iterator]();
+// for (let b = iter2.next(); b.done !== true; b = iter2.next()) {
+//     const tta = b.value;
+//     console.log(tta + ' ' + map.get(tta));
+// }
+
+let tt1 = map.entries();
+let iter3 = tt1[Symbol.iterator]();
+for (let b = iter3.next(); b.done !== true; b = iter3.next()) {
+    console.log(b.value[0] + ' ' + b.value[1]);
+}
+
+
+//
+
+function calcVolume(l) {
+    return function (b) {
+        return function (h) {
+            return l * b * h;
+        }
+    }
+}
+//currying
+let aa = calcVolume(1);
+let aa1 = aa(2);
+console.log(aa1(3));
+const MyVol = (l) => {
+    return (b) => {
+        return (h) => {
+            return l * b * h;
+        }
+    }
+}
+console.log(MyVol(1)(2)(3));
+
+///
+
+//generator function
+
+function* gen() {
+    console.log('First Generation');
+    yield 'First Gen';
+    console.log('Second Generation');
+    yield 'Second Gen';
+    console.log('Third Generation');
+    yield 'Third Gen';
+    console.log('Fourth Generation');
+    yield 'Fourth Gen';
+    console.log('Fifth Generation');
+    yield 'Fifth Gen';
+}
+
+let myiter = gen();
+console.log(myiter.next().value);
+console.log(myiter.next().value);//junction
+for (let i = 0; i < 1000; i++) {
+    console.log(i + 1);
+}
+console.log("I will do something else");//fork
+console.log(myiter.next().value);
+// for (let b = myiter.next(); b.done !== true; b = myiter.next()) {
+//     console.log(b.value);
+// }
+console.log('********');
+
+let myArr = ['Sunil', 'Ambarush', 'Ambrose', 'David', 'Hakim'];
+let myLen = myArr.length;
+
+function* myGen() {
+    let a = 0;
+    while (a < myLen) {
+        yield myArr[a];
+        a++;
+    }
+}
+
+let myVals = myGen();
+for (let b = myVals.next(); b.done !== true; b = myVals.next()) {
+    console.log(b.value);
+}
+console.log('**************');
+
+let arr1 = [1, 2, 3, 4, 5];
+let arr2 = ['Sunil', 'Anil', 'Akram', 'Wasim', 'Charles'];
+let myMap = new Map();
+for (let i = 0; i < arr1.length; i++) {
+    myMap.set(arr1[i], arr2[i]);
+}
+
+let len = arr1.length;
+
+function* MapGen() {
+    let a = 0;
+    while (a < len) {
+        yield Array.from(myMap.keys())[a];
+        a++;
+    }
+}
+
+let myItera = MapGen();
+// console.log(myItera.next().value);
+// console.log(myItera.next().value);
+// console.log(myItera.next().value);
+
+for (let b = myItera.next(); b.done !== true; b = myItera.next()) {
+    const c = b.value;
+    const c1 = myMap.get(c);
+    let rr = `The key of the map is ${c} and the value for the key is ${c1}`;
+    console.log(rr);
+}
+
+
+
+///
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Welcome to React</h1>
+        <CompA />
+        <CompB />
+        <MyCompC />
+        <MyCompD />
+        <MyCompE />
+        <MyCompF />
+        <MyCompG />
+        <MyCompH />
+      </div>
+    );
+  }
+}
+
+class CompA extends React.Component {
+  render() {
+    return (
+      <div>
+        <h2>Iam getting used to React!</h2>
+      </div>
+    );
+  }
+}
+
+class CompB extends React.Component {
+
+  render() {
+    return (
+      <div>
+        <h3>This is third Component</h3>
+      </div>
+    );
+  }
+}
+
+const MyCompC = class extends React.Component {
+  render() {
+    return (
+      <div>
+        <h4>Iam Fourth Component</h4>
+      </div>
+    );
+  }
+}
+
+function MyCompD(props) {
+  return (
+    <div>
+      <h5>This is Fifth Component</h5>
+    </div>
+  )
+}
+
+const MyCompE = function (props) {
+  return (<div>
+    <h6>Iam The Sixth Component</h6>
+  </div>)
+}
+
+const MyCompF = (props) => {
+  return (
+    <div>
+      <h1>Yet Another Component</h1>
+    </div>
+  )
+}
+
+const MyCompG = () => { return <>Hai</> }
+
+const MyCompH=function(){return <>Hello</>}
+
+///
+
+class Cars {
+  constructor(name, brand) {
+    this.name = name;
+    this.brand = brand;
+  }
+}
+
+function retCars() {
+  let cArr = [];
+  let arr1 = ['Empala', 'Octavia', 'Eclass', 'Camry', 'Continental'];
+  let arr2 = ['Chevrolet', 'Skoda', 'Mercedes', 'Toyota', 'Lincoln'];
+  for (let i = 0; i < arr1.length; i++) {
+    let car = new Cars(arr1[i], arr2[i]);
+    cArr.push(car);
+  }
+  return cArr;
+}
+
+///
+
+
+import './App.css';
+
+function App() {
+  let mystyle = {
+    backgroundColor: 'blue',
+    color: 'red'
+  }
+  return (
+    <>
+      {/* <button style={{ color: 'red', backgroundColor: 'blue' }}>Linux Button</button>
+      <br />
+      <input type="text" style={mystyle} />
+      <br />
+      <button className='mya'>Click Me</button> */}
+      <br />
+      <div className='jumbotron'>
+        <h1>My First Boot strap div</h1>
+      </div>
+      <br />
+      <button className='btn btn-danger'>Test</button>
+      <br />
+      <span className='badge'>satish</span>
+      <br />
+      <div className='alert alert-success'>Godzilla Vs kingkong</div>
+      <br />
+      <div className="container">
+        <div className="row">
+          <div className="col-sm">
+            <CompA />
+          </div>
+          <div className="col-sm">
+            <CompB />
+          </div>
+          <div className="col-sm">
+            <CompC />
+          </div>
+        </div>
+      </div>
+      <table className='table table-hover'>
+        <thead>
+          <tr><th>Name</th><th>Email</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Satish</td><td>sat@yahoo.com</td></tr>
+          <tr><td>Mukesh</td><td>muk@yahoo.com</td></tr>
+          <tr><td>Sarad</td><td>sarad@yahoo.com</td></tr>
+        </tbody>
+      </table>
+    </>
+
+  );
+}
+
+function CompA(props) {
+  return <><div className='jumbotron'>CompA Loaded Into Memory</div></>
+}
+function CompB(props) {
+  return <><span className='badge'>CompB Loaded Into Memory</span></>
+}
+function CompC(props) {
+  return <><label className='lbl lbl-success'>CompC Loaded Into Memory</label></>
+}
+export default App;
+
+///
+
+class Cars {
+    constructor(name, brand, descr) {
+        this.name = name;
+        this.brand = brand;
+        this.descr = descr;
+    }
+}
+
+export default Cars;
+
+//
+
+import Cars from "./Cars";
+
+export function retCars() {
+    let cArr = [];
+    let arr1 = ['empala', 'octavia', 'camry', 'punto', 'eclass'];
+    let arr2 = ['Chevorlet', 'Skoda', 'Toyota', 'Fiat', 'Mercedes'];
+    let arr3 = ['A single owner car', 'Well furnished car', 'A decent old car', 'A popular brand well maintained', 'A luxury car par excellent']
+    for (let i = 0; i < arr1.length; i++) {
+        let car = new Cars(arr1[i], arr2[i], arr3[i]);
+        cArr.push(car);
+    }
+    return cArr;
+}
+
+///
+
+import React from 'react';
+import { retCars } from './myfun';
+class CarComp extends React.Component {
+    render() {
+        return (
+            <>
+                <div className='jumbotron'><h1>Car Portal </h1><small>Cars For Sale</small></div>
+                <br />
+                {
+                    retCars().map(car => <>
+                        <div className="card" style={{ width: '18rem' }}>
+                            <div className="card-body">
+                                <h5 className="card-title">{car.brand}</h5>
+                                <h6 className="card-subtitle mb-2 text-muted">{car.name}</h6>
+                                <p className="card-text">{car.descr}</p>
+                                <a href="#" className="card-link">Buy The Car</a>
+                                <a href="#" className="card-link">Sell The Car</a>
+                            </div>
+                        </div>
+                        <br /><hr /><br />
+                    </>)
+                }
+            </>
+        );
+    }
+
+
+
+
+}
+
+export default CarComp;
+
+///
+
+<App pp={'Guns Of Navarone'} />
+
+///
+  <h2>{props.pp}</h2>
+      <br />
+      <BComp l={'Soumaya'} p={'Mohit'} />
+
+///
+import React from "react";
+import BBComp from "./BBComp";
+
+function BComp(props) {
+    return (
+        <>
+            <h1>{props.l}</h1>
+            <br />
+            <h1>{props.p}</h1>
+            <br />
+            <div style={{ backgroundColor: 'black', color: 'white' }}><BBComp j={props.l} /></div>
+        </>
+    )
+}
+
+export default BComp;
+
+///
+import React from "react";
+
+const BBComp = (props) => {
+    return <>{props.j}</>
+}
+
+export default BBComp;
+///
+import React from "react";
+import BComp from "./BComp";
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      a: 'Iam a state variable',
+      b: 0,
+      c: true,
+      d: { name: 'sat', email: 'sat@yahoo.com' },
+      e: ['Ganapati', 'Mohammed', 'Ali', 'Christ', 'Thomas']
+    }
+  }
+
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ a: 'Africa is the center of the world' });
+    }, 5000);
+    this.setState({ b: 100 });
+    this.setState({ c: false });
+    this.setState({ d: { name: 'dundigal', email: 'dundi@croc.com' } })
+  }
+
+  render() {
+    return (
+      <>
+        {this.state.a}<br />
+        {this.state.b}<br />
+        {this.state.c ? <b>Hello</b> : <i>Hai</i>}<br />
+        {JSON.stringify(this.state.d)}
+        {
+          this.state.e.map(n => <p>{n}</p>)
+        }
+        <BComp l={this.state.a} />
+      </>
+    )
+  }
+}
+
+
+export default App;
+
+
+///
+
+import React, { useEffect, useState } from "react";
+
+function NAPP(props) {
+    const [a, SetA] = useState('');
+    const [b, SetB] = useState('');
+    const [c, SetC] = useState(0);
+
+    useEffect(() => {
+        SetA('Iam A New Value');
+        SetB('new Value');
+        SetC(100);
+    }, [a, b, c])
+
+    return <>
+        <h1>{a}</h1>
+        <br />
+        <h2>{b}</h2>
+        <br />
+        <h3>{c}</h3>
+    </>
+}
+
+export default NAPP;
+
+///
+
+class Books {
+    constructor(name, author) {
+        this.name = name;
+        this.author = author;
+    }
+}
+
+export default Books;
+
+
+
+
+///
+
+import Books from "./Books";
+import Cars from "./Cars";
+
+export function retCars() {
+    let cArr = [];
+    let arr1 = ['empala', 'octavia', 'camry', 'punto', 'eclass'];
+    let arr2 = ['Chevorlet', 'Skoda', 'Toyota', 'Fiat', 'Mercedes'];
+    let arr3 = ['A single owner car', 'Well furnished car', 'A decent old car', 'A popular brand well maintained', 'A luxury car par excellent']
+    for (let i = 0; i < arr1.length; i++) {
+        let car = new Cars(arr1[i], arr2[i], arr3[i]);
+        cArr.push(car);
+    }
+    return cArr;
+}
+
+export function retBooks() {
+    let bArr = [];
+    let arr1 = ['Pelican Brief', 'Adventures of tom sawyer', 'Banco', 'Kane And Abel', 'Silence of the moor'];
+    let arr2 = ['John Grisham', 'Mark Twain', 'Lafeyyet', 'Jefferey Archer', 'Salman Rushdie'];
+    for (let i = 0; i < arr1.length; i++) {
+        let book = new Books(arr1[i], arr2[i]);
+        bArr.push(book);
+    }
+    return bArr;
+}
+
+///
+
+import React from "react";
+import { retBooks } from "./myfun";
+
+function BookComp(props) {
+    return (
+        <>
+            <table className="table table-striped">
+                <thead>
+                    <tr><th>Name Of The Book</th><th>Author Of The Book</th></tr>
+                </thead>
+                <tbody>
+                    {
+                        retBooks().map(book => <tr><td>{book.name}</td><td>{book.author}</td></tr>)
+                    }
+                </tbody></table>
+        </>
+    )
+}
+
+export default BookComp;
+
+///
+
+ <BookComp />
+
+///
+
+//Only Applies to class Components:
+Mounting:
+There are four built in methods which are fired in the same order when the component loads into memory:
+-constructor():Method of a class which fires first and only once the when the object is created
+-getDerivedStateFromProps():To Load defaults and ensure all the values are correctly populated
+-render():
+What you see on you on your screen
+-componentDidMount():
+Is used to load the data into state variables or make changes, usually this method is used to load data from api into the state variables
+
+class MyCom extends React.Component{}
+
+Update:
+-getDerivedStateFromProps()
+-shouldComponentUpdate():
+Booelan value which returns true if the state is changing in the parent component
+-render():
+-getSnapShotBeforeUpdate():
+It tracks the value of state and prop and retains the prev value of state
+-componentDidUpdate():boolean
+
+unmount:
+componentWillUnmount()
+
+///
+
+import React from "react";
+
+class Header extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            fav: 'red'
+        }
+    }
+
+
+    componentDidMount() {
+        setTimeout(() => {
+            this.setState({ fav: 'blue' });
+        }, 3000);
+    }
+
+
+    getSnapshotBeforeUpdate(prevprops, prevstate) {
+        console.log('*******' + prevstate.fav);
+        return null;
+    }
+
+    componentDidUpdate() {
+        console.log(this.state.fav);
+        return true;
+    }
+
+    render() {
+        return (
+            <>
+                <h1>My Favorite color is :{this.state.fav}</h1>
+            </>
+        );
+    }
+
+}
+
+export default Header;
+
+///
+
+import React from "react";
+
+class MyContainer extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            show: true
+        }
+    }
+
+    del = () => {
+        this.setState({ show: false })
+    }
+
+    render() {
+        let myHead;
+
+        if (this.state.show) {
+            myHead = <MyChild />
+        }
+        return (
+            <>
+                {myHead}
+                <br />
+                <button onClick={this.del}>Delete Comp</button>
+            </>
+        );
+    }
+}
+
+
+class MyChild extends React.Component {
+    componentWillUnmount() {
+        alert('Unmounted My Child from UI');
+    }
+    render() {
+        return (
+            <>
+                <h1 style={{ backgroundColor: 'blueviolet', color: 'wheat' }}>
+                    Test My Child Component
+                </h1>
+            </>
+        );
+    }
+}
+
+export default MyContainer;
+
+////
+
+https://github.com/primefaces/primereact-examples/tree/main/cra-basic
+
+///
+
+import React from "react";
+
+ ///
+
+import React from "react";
+import CompA from "./CompA";
+import CompB from "./CompB";
+import CompC from "./CompC";
+
+class CompEveVal extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            a: ''
+        }
+    }
+
+
+    del = (e) => {
+        alert(e.target.value);
+    }
+
+
+    render() {
+        return (
+            <>
+                <button onClick={(e) => {//Synthetic Event
+                    alert('Iam Clicked');
+                }}>Click Me</button>
+                <br />
+                <button value="Einstein" onClick={(e) => this.del(e)}>Test</button>
+                <br />
+                <input type="text" onChange={(e) => { this.setState({ a: e.target.value }) }} />
+                <br />
+                The value in textbox is :{this.state.a}
+
+                <ul style={{ listStyleType: 'none' }}>
+                    <li><CompA a={this.state.a} /></li>
+                    <li><CompB a={this.state.a} /></li>
+                    <li><CompC a={this.state.a} /></li>
+                </ul>
+                <br />
+
+            </>
+        );
+    }
+}
+
+export default CompEveVal;
+
+//
+
+import React from "react";
+
+function CompA(props) {
+    return <h1>CompA Receives Value:{props.a}</h1>
+}
+
+export default CompA;
+
+//
+
+import React from "react";
+
+function CompB(props) {
+    return <h1>CompB Receives Value:{props.a}</h1>
+}
+
+export default CompB;
+
+//
+import React from "react";
+
+function CompC(props) {
+    return <h1>CompC Receives Value:{props.a}</h1>
+}
+
+export default CompC;
+
+//
+
+
+mysql> create table countlist(cid int primary key,cname varchar(50));
+
+
+mysql> insert into countlist values(1,'Tunsia');
+
+
+mysql> insert into countlist values(2,'New Delhi');
+
+
+mysql> insert into countlist values(3,'Adis Ababa');
+
+
+mysql> insert into countlist values(4,'Cape town');
+
+
+mysql> insert into countlist values(5,'Johannesberg');
+
+
+mysql> insert into countlist values(6,'Patna');
+
+
+mysql> update countlist set cname='Tunis' where cid=1;
+
+////
+
+import React from "react";
+
+class CountListComp extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            data: []
+        }
+    }
+
+    componentDidMount() {
+        fetch('http://localhost:8080/serv/clist')
+            .then(a => a.json())
+            .then(r => this.setState({ data: r }))
+    }
+
+
+    render() {
+        return (
+            <>
+                <table border="1">
+                    <tr><td>City Id</td><td>City Name</td></tr>
+                    {
+                        this.state.data.map(n => <tr><td>{n.cid}</td><td>{n.cname}</td></tr>)
+                    }
+                </table>
+            </>
+        );
+    }
+}
+
+export default CountListComp;
+
+///
+
+import React from "react";
+
+class ServComp extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            data: []
+        }
+    }
+    componentDidMount() {
+        fetch('https://jsonplaceholder.typicode.com/todos')
+            .then(a => a.json())
+            .then(b => this.setState({ data: b }))
+    }
+    render() {
+        return (
+            <>
+                <ul>
+                    {
+                        this.state.data.map(n => <li>{n.id}&nbsp;{n.title}</li>)
+                    }
+                </ul>
+            </>
+        );
+    }
+
+
+}
+
+export default ServComp;
+
+///
+
+import React from "react";
+
+class FormComp extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            data: '',
+            cname: '',
+            cemail: '',
+            cmobile: ''
+        }
+    }
+
+    onCha(e) {
+        let a = e.target.name;
+        let b = e.target.value;
+        this.setState({ [a]: b });
+    }
+
+    onSub(e) {
+        e.preventDefault();
+        let cls = new DataCls(this.state.cname, this.state.cemail, this.state.cmobile);
+        // alert(JSON.stringify(cls));
+        this.setState({ data: JSON.stringify(cls) })
+    }
+
+    render() {
+        return (
+            <>
+                <form onSubmit={(e) => this.onSub(e)}>
+                    <table border="1">
+                        <tr><td>Name</td><td><input type="text" maxLength="30" name="cname" required="true" onChange={(e) => this.onCha(e)} /></td></tr>
+                        <tr><td>Email</td><td><input type="email" name="cemail" required="true" onChange={(e) => this.onCha(e)} /></td></tr>
+                        <tr><td>Mobile</td><td><input type="text" name="cmobile" required="true" onChange={(e) => this.onCha(e)} /></td></tr>
+                        <tr><td><input type="submit" value="Save" /></td><td><input type="reset" value="Cancel" /></td></tr>
+                    </table>
+                </form>
+                <br />
+                The form submitted values are:{this.state.data}
+            </>
+        );
+    }
+
+
+}
+
+
+class DataCls {
+    constructor(name, email, mobile) {
+        this.name = name;
+        this.email = email;
+        this.mobile = mobile;
+    }
+}
+
+export default FormComp;
+
+///
+
+import React, { useEffect, useState } from "react";
+
+function FunForm(props) {
+    const [cname, SetCname] = useState('');
+    const [cemail, SetCemail] = useState('');
+    const [cmobile, SetCmobile] = useState('');
+    useEffect(() => {
+    }, [cname, cemail, cmobile])
+    return (
+        <>
+            <form onSubmit={(e) => {
+                e.preventDefault();
+                alert(cname + ' ' + cemail + ' ' + cmobile);
+            }}>
+                <table border="1">
+                    <tr><td>Name</td><td><input type="text" maxLength="30" name="cname" required="true" onChange={(e) => { SetCname(e.target.value) }} /></td></tr>
+                    <tr><td>Email</td><td><input type="email" name="cemail" required="true" onChange={(e) => { SetCemail(e.target.value) }} /></td></tr>
+                    <tr><td>Mobile</td><td><input type="text" name="cmobile" required="true" onChange={(e) => { SetCmobile(e.target.value) }} /></td></tr>
+                    <tr><td><input type="submit" value="Save" /></td><td><input type="reset" value="Cancel" /></td></tr>
+                </table>
+            </form>
+        </>
+    )
+}
+
+export default FunForm;
+
+///
+
+import React, { useEffect, useState } from "react";
+
+function FunForm(props) {
+    const [cname, SetCname] = useState('');
+    const [cemail, SetCemail] = useState('');
+    const [cmobile, SetCmobile] = useState('');
+    const [ccountry, SetCcountry] = useState('');
+    useEffect(() => {
+    }, [cname, cemail, cmobile, ccountry])
+    return (
+        <>
+            <form onSubmit={(e) => {
+                e.preventDefault();
+                alert(cname + ' ' + cemail + ' ' + cmobile + ' ' + ccountry);
+            }}>
+                <table border="1">
+                    <tr><td>Name</td><td><input type="text" maxLength="30" name="cname" required="true" onChange={(e) => { SetCname(e.target.value) }} /></td></tr>
+                    <tr><td>Email</td><td><input type="email" name="cemail" required="true" onChange={(e) => { SetCemail(e.target.value) }} /></td></tr>
+                    <tr><td>Mobile</td><td><input type="text" name="cmobile" required="true" onChange={(e) => { SetCmobile(e.target.value) }} /></td></tr>
+                    <tr><td>Country</td><td>
+                        <select onChange={(e) => {
+                            SetCcountry(e.target.value)
+                        }}>
+                            <option value="India">India</option>
+                            <option value="Tunisia">Tunisia</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="China">China</option>
+                            <option value="Japan">Japan</option>
+                        </select>
+                    </td></tr>
+                    <tr><td><input type="submit" value="Save" /></td><td><input type="reset" value="Cancel" /></td></tr>
+                </table>
+            </form>
+        </>
+    )
+}
+
+export default FunForm;
+
+///
+
+class CDataForm {
+    constructor(name, email, mobile, country) {
+        this.name = name;
+        this.email = email;
+        this.mobile = mobile;
+        this.country = country;
+    }
+}
+
+///
+
+const theme = {
+    light: {
+        foreground: '#000000',
+        background: '#eeeeee'
+    },
+    dark: {
+        foreground: '#ffffff',
+        background: '#222222'
+    }
+}
+
+export default theme;
+
+///
+
+import React, { useRef } from "react";
+
+function AComp(props) {
+    const inp = useRef(null);//Hook to point to a component in UI
+    const onButtonClick = () => {
+        inp.current.focus();
+    }
+    return (
+        <>
+            A:<input type="text" /><br />
+            B:<input type="text" /><br />
+            C:<input type="text" ref={inp} /><br />
+            D:<input type="text" /><br />
+            <button onClick={onButtonClick}>Click Me</button>
+        </>
+    );
+}
+
+export default AComp;
+
+///
+
+import React from "react"
+import theme from "./mytheme"
+
+const themeContext = React.createContext(theme.light);
+
+export default themeContext;
+
+
+//
+import React from "react";
+import ThemedButton from "./ThemedButton";
+
+function Toolbar(props) {
+    return (
+        <>
+            {/* <ThemedButton /> */}
+            {
+                ['Einstein', 'Newton', 'Ramanujam', 'Pascal', 'Bose'].map(n => <ThemedButton a={n} />)
+            }
+        </>
+    )
+}
+
+export default Toolbar;
+
+///
+import React, { useContext } from "react";
+import themeContext from "./mycontext";
+
+function ThemedButton(props) {
+    const theme = useContext(themeContext);//Hook only works in fun comp
+    return (
+        <>
+            <button style={{ backgroundColor: theme.background, color: theme.foreground }}>
+                {props.a}
+            </button>
+        </>
+    );
+}
+
+export default ThemedButton;
+
+///
+
+import React from "react";
+import TTComp from "./TTComp";
+
+function TComp(props) {
+    return (
+        <>
+            <TTComp />
+        </>
+    )
+}
+
+export default TComp;
+
+//
+
+import React from "react";
+import TTTComp from "./TTTComp";
+
+function TTComp(props) {
+    return (
+        <>
+            <TTTComp />
+        </>
+    )
+}
+
+export default TTComp;
+
+///
+import React from "react";
+import themeContext from "./mycontext";
+
+function TTTComp(props) {
+    const theme = React.useContext(themeContext);
+    return (
+        <>
+            <input type="text" style={{ backgroundColor: theme.background, color: theme.foreground }} />
+        </>
+    )
+}
+
+export default TTTComp;
+
+///
+
+import React from "react";
+import TComp from "./TComp";
+import ThemedButton from "./ThemedButton";
+
+function Toolbar(props) {
+    return (
+        <>
+            {/* <ThemedButton /> */}
+            {
+                ['Einstein', 'Newton', 'Ramanujam', 'Pascal', 'Bose'].map(n => <ThemedButton a={n} />)
+            }
+            <br />
+            <TComp />
+        </>
+    )
+}
+
+export default Toolbar;
+
+///
+
+import logo from './logo.svg';
+import './App.css';
+import themeContext from './mycontext';
+import theme from './mytheme';
+import Toolbar from './MyToolBar';
+import AComp from './AComp';
+
+function App() {
+  return (
+    <div>
+      <themeContext.Provider value={theme.dark}>
+        <Toolbar />
+      </themeContext.Provider>
+      <br />
+      <AComp />
+    </div>
+  );
+}
+
+export default App;
+
+
+///
+
+import React from "react";
+
+const authContext = React.createContext({
+    auth: null,
+    login: () => { },
+    logout: () => { }
+})
+
+export default authContext;
+
+///
+import React from "react";
+import authContext from "./AuthContext";
+
+class Login extends React.Component {
+    static contextType = authContext;
+    render() {
+        return (
+            <>
+                <p>You need to login to goto our site!</p>
+                <button onClick={this.context.login}>Login</button>
+            </>
+        );
+    }
+}
+
+export default Login;
+
+///
+import React from "react";
+import authContext from "./AuthContext";
+
+class Logout extends React.Component {
+    static contextType = authContext;
+    render() {
+        return (
+            <>
+                <p>Welcome to our web site click on logout to logout</p>
+                <button onClick={this.context.logout}>Logout</button>
+            </>
+        );
+    }
+}
+
+export default Logout;
+
+////
+ <authContext.Provider value={{ auth: auth, login: login, logout: logout }}>
+        <p>
+          {auth ? <Logout /> : <Login />}
+        </p>
+        <br />
+
+      </authContext.Provider>
+
+import React, { useRef } from "react";
+
+function AComp(props) {
+    const inp = useRef(null);//Hook to point to a component in UI
+    const onButtonClick = () => {
+        inp.current.focus();
+    }
+    return (
+        <>
+            A:<input type="text" /><br />
+            B:<input type="text" /><br />
+            C:<input type="text" ref={inp} /><br />
+            D:<input type="text" /><br />
+            <button onClick={onButtonClick}>Click Me</button>
+        </>
+    );
+}
+
+export default AComp;
+
+///
+
+import React from "react";
+import authContext from "./AuthContext";
+import Logins from "./logsi";
+
+class Login extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            username: '',
+            password: '',
+            validity: false
+        }
+    }
+    static contextType = authContext;
+    render() {
+        return (
+            <>
+                <p>You need to login to goto our site!</p>
+                <form onSubmit={(e) => {
+                    e.preventDefault();
+                    const valids = localStorage.getItem("logins");
+                    const lvalids = new Logins(this.state.username, this.state.password);
+                    if (valids === JSON.stringify(lvalids)) {
+                        alert('Correct login');
+                    } else {
+                        alert('reneter values');
+                    }
+                }
+
+                }>
+                    <table>
+                        <tr><td>username</td><td><input name="username" type="text" onChange={(e) => {
+                            this.setState({ username: e.target.value })
+                        }} /></td></tr>
+                        <tr><td>password</td><td><input name="password" type="password" onChange={(e) => {
+                            this.setState({ password: e.target.value })
+                        }} /></td></tr>
+                        <tr><td><input type="submit" value="Login" /></td><td><input type="reset" value="Cancel" /></td></tr>
+                    </table>
+                </form>
+                {/* <button onClick={this.context.login}>Login</button> */}
+            </>
+        );
+    }
+}
+
+
+
+export default Login;
+
+///
+
+import logo from './logo.svg';
+import './App.css';
+import themeContext from './mycontext';
+import theme from './mytheme';
+import Toolbar from './MyToolBar';
+import AComp from './AComp';
+import { useEffect, useState } from 'react';
+import authContext from './AuthContext';
+import Login from './Login';
+import Logout from './Logout';
+import Logins from './logsi';
+
+function App() {
+
+  const [auth, SetAuth] = useState(false);
+
+  useEffect(() => {
+    let ss = new Logins('tester', 'tester');
+    localStorage.setItem('logins', JSON.stringify(ss));
+  }, [auth])
+
+  const login = () => {
+    SetAuth(true);
+  }
+
+  const logout = () => {
+    SetAuth(false);
+  }
+
+  return (
+    <div>
+      {/* <themeContext.Provider value={theme.dark}>
+        <Toolbar />
+      </themeContext.Provider>
+      <br />
+      <AComp /> */}
+
+      <authContext.Provider value={{ auth: auth, login: login, logout: logout }}>
+        {/* <p>
+          {auth ? <Logout /> : <Login />}
+        </p>
+        <br /> */}
+        <Login />
+
+      </authContext.Provider>
+
+
+
+    </div>
+  );
+}
+
+
+export default App;
+///
+
+export default class Logins {
+    constructor(username, password) {
+        this.username = username;
+        this.password = password;
+    }
+}
+
+///
+
+import React from "react";
+import authContext from "./AuthContext";
+
+class Logout extends React.Component {
+    static contextType = authContext;
+    render() {
+        return (
+            <>
+                <p>Welcome to our web site click on logout to logout</p>
+                <button onClick={this.context.logout}>Logout</button>
+            </>
+        );
+    }
+}
+
+export default Logout;
+
+///
+                <nav className="navbar navbar-expand-lg navbar-light bg-info">
+                    <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+                        <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li className="nav-item active">
+                                <a className="nav-link" href="#">Home</a>
+                            </li>
+                            <li className="nav-item active">
+                                <a className="nav-link" href="#">Link</a>
+                            </li>
+                            <li className="nav-item active">
+                                <a className="nav-link">Link</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+///
+
+import React from "react";
+import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
+import About from "./About";
+import Contact from "./Contact";
+import Home from "./Home";
+import Projects from "./Projects";
+
+
+class NApp extends React.Component {
+
+    render() {
+        return (
+            <>
+                <Router>
+                    <nav className="navbar navbar-expand-lg navbar-light bg-danger">
+                        <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+                            <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+                                <li className="nav-item active">
+                                    <Link className="btn btn-info" to="/home">Home</Link>
+                                </li>&nbsp;
+                                <li className="nav-item active">
+                                    <Link className="btn btn-info" to="/about">About</Link>
+                                </li>&nbsp;
+                                <li className="nav-item active">
+                                    <Link className="btn btn-info" to="/contact">Contact</Link>
+                                </li>&nbsp;
+                                <li className="nav-item active">
+                                    <Link className="btn btn-info" to="/projects">Projects</Link>
+                                </li>&nbsp;
+                            </ul>
+                        </div>
+                    </nav>
+                    <Switch>
+                        <Route path="/home">
+                            <Home />
+                        </Route>
+                        <Route path="/about">
+                            <About />
+                        </Route>
+                        <Route path="/contact">
+                            <Contact />
+                        </Route>
+                        <Route path="/projects">
+                            <Projects />
+                        </Route>
+
+                    </Switch>
+
+                </Router>
+
+            </>
+        );
+    }
+}
+
+export default NApp;
+
+///
+
+import React from "react";
+
+function Home(props) {
+    return <h1 className="alert alert-danger">Welcome to home component</h1>
+}
+
+export default Home;
+
+//
+
+import React from "react";
+
+function About(props) {
+    return <h1 className="alert alert-success">Welcome to about us component</h1>
+}
+
+export default About;
+
+///
+
+import React from "react";
+
+function Contact(props) {
+    return <h1 className="alert alert-info">Welcome to Contact component</h1>
+}
+
+export default Contact;
+
+//
+
+import React from "react";
+
+function Projects(props) {
+    return <h1 className="alert alert-warning">Welcome to Projects component</h1>
+}
+
+export default Projects;
+
+///
+
+ <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+
+///
+
+import React from "react";
+
+class PApp extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            aRes: 0,
+            mRes: 0
+        }
+    }
+
+    componentDidMount() {
+        import('./myfun').then(a => this.setState({ aRes: a.add(21, 22) }));
+        import('./myfun').then(b => this.setState({ mRes: b.mul(34, 5) }));
+    }
+
+
+    render() {
+        return (
+            <>
+                Sum of the numbers is :<label className="alert alert-primary">{this.state.aRes}</label>
+                <br /><br />
+                Product of the numbers is :<label className="alert alert-primary">{this.state.mRes}</label>
+            </>
+        );
+    }
+}
+
+export default PApp;
+
+///
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import { createStore } from 'redux';
+import reducer from './reducers';
+import { Provider } from 'react-redux';
+
+
+const store = createStore(reducer,
+  Window.__REDUX_DEVTOOLS_EXTENSION && Window.__REDUX_DEVTOOLS_EXTENSION__()
+);
+
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
+
+///
+
+
+const reducer = (state = '', action) => {
+    switch (action.type) {
+        case 'INCREMENT':
+            return 'Ratammahatta';
+        case 'DECREMENT':
+            return 'Ahura Mazda';
+        default:
+            return 'Continental Treat';
+    }
+}
+
+export default reducer;
+
+///
+
+export function increment() {
+    return {
+        type: 'INCREMENT'
+    }
+}
+
+export function decrement() {
+    return {
+        type: 'DECREMENT'
+    }
+}
+
+///
+
+import React from "react";
+
+class MyComp extends React.Component {
+    render() {
+        const { counter, increment, decrement } = this.props;
+        return (
+            <>
+                <button onClick={increment}>Send</button>
+                <button onClick={decrement}>Recieve</button>
+
+                <br />
+                The value in the store is <div style={{ backgroundColor: 'navajowhite', color: 'royalblue' }}>
+                    {counter}
+                </div>
+            </>
+        );
+    }
+}
+
+export default MyComp;
+
+///
+
+import { connect } from 'react-redux';
+import { increment, decrement } from './actions/index';
+import MyComp from './MyComp';
+
+//function is to copy value from store and send it to component
+const mapStateToProps = (state) => {
+    return {
+        counter: state
+    }
+}
+
+//maps ui actions with the methods in actions index file
+const mapDispatchToProps = (dispatch) => {
+    return {
+        increment: () => dispatch(increment()),
+        decrement: () => dispatch(decrement())
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(MyComp);
+
+
+///
+
+import React from "react";
+
+class MyForm extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            name: '',
+            email: '',
+            mobile: '',
+            storeval: ''
+        }
+        this.onCha = this.onCha.bind(this);
+        this.onSub = this.onSub.bind(this);
+    }
+
+
+    onCha(e) {
+        const a = e.target.name;
+        const b = e.target.value;
+        this.setState({ [a]: b });
+    }
+
+    onSub(e) {
+        e.preventDefault();
+        const { increment } = this.props;
+        let regist = new Regist(this.state.name, this.state.email, this.state.mobile);
+        increment(JSON.stringify(regist));
+        alert(JSON.stringify(regist));
+    }
+
+    render() {
+        return (
+            <>
+                <form onSubmit={this.onSub}>
+                    <table>
+                        <tr>
+                            <td>Name</td>
+                            <td><input type="text" name="name" onChange={this.onCha} /></td></tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="text" name="email" onChange={this.onCha} /></td></tr>
+                        <tr>
+                            <td>Mobile</td>
+                            <td><input type="text" name="mobile" onChange={this.onCha} /></td></tr>
+                        <tr><td><input type="submit" value="Save" /></td>
+                            <td><input type="reset" value="Cancel" /></td></tr>
+                    </table>
+                </form>
+
+            </>
+        );
+    }
+
+///
+
+import { connect } from 'react-redux';
+import { increment, decrement } from './actions/index';
+import MyForm from './MyForm';
+
+//function is to copy value from store and send it to component
+const mapStateToProps = (state) => {
+    return {
+        counter: state
+    }
+}
+
+//maps ui actions with the methods in actions index file
+const mapDispatchToProps = (dispatch) => {
+    return {
+        increment: (x) => dispatch(increment(x)),
+        decrement: () => dispatch(decrement())
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(MyForm);
+
+
+////
+
+let arr = [];
+    fetch('https://jsonplaceholder.typicode.com/todos').then(a => a.json()).then(b => arr = b);
+
+///
+
+increment: (x) => dispatch(increment(JSON.stringify(arr))),
+
+///
+
+import React from "react";
+
+function reducer(state = { vehicle: '' }, action) {
+
+    switch (action.type) {
+        case "Car":
+            return {
+                vehicle: 'Its a car my own car'
+            }
+        case "Bike":
+            return {
+                vehicle: 'Its a bike my own bike'
+            }
+
+        default:
+            return "NOTHING"
+    }
+}
+
+export default reducer;
+
+///
+
+import VehicComp from "./VehicComp";
+
+
+
+function App() {
+  return (
+    <>
+      <VehicComp />
+    </>
+  );
+}
+
+export default App;
+
+///
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import { createStore } from 'redux';
+import reducer from './vehicle';
+import { Provider } from 'react-redux';
+
+const store = createStore(reducer);
+
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
+
+
+///
+
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+
+const VehicComp = () => {
+    const storeval = useSelector(state => state);
+    const dispatch = useDispatch();
+    return (
+        <>
+            <button value="Skoda Octavia" onClick={(e) => dispatch({ type: 'Car', a: e.target.value })}>Car</button>
+            <br />
+            <h1>{storeval.vehicle}</h1>
+            <br />
+            <button onClick={() => dispatch({ type: 'Bike' })}>Bike</button>
+        </>
+    );
+}
+
+export default VehicComp;
+
+//
+
+import React from "react";
+
+function reducer(state = { vehicle: '' }, action) {
+
+    switch (action.type) {
+        case "Car":
+            return {
+                vehicle: action.a
+            }
+        case "Bike":
+            return {
+                vehicle: 'Its a bike my own bike'
+            }
+
+        default:
+            return {
+                vehicle: 'NOTHING'
+            }
+    }
+}
+
+export default reducer;
+
+///
+
+import { render, screen } from '@testing-library/react';
+import App from './App';
+import { addNum } from './myfin';
+
+test('tests the text', () => {
+  render(<App />);
+  expect(2).toBeLessThanOrEqual(4 - 2);
+});
+
+test('checking the function output', () => {
+  expect(addNum(2, 3)).toBe(5);
+});
+
+test('Should have the link on the page', () => {
+  alert(render(<App />).container());
+  expect(1 + 2).toBeGreaterThan(2).toBeTruthy();
+});
+
+-----------------------------------------------------------------------------------------
+
+var a=100;
+console.log(a);
+const a1=900;
+console.log(a1);
+let a2=102;
+console.log(a2);
+for(var b=0;b<11;b++){
+console.log(b);
+}
+console.log(b);
+for(let c=0;c<11;c++){
+console.log(c);
+}
+console.log(typeof a);
+let s='string is king';
+console.log(typeof s);
+let cc=true;
+console.log(cc);
+let rr;
+console.log(typeof rr);
+let rr2=null;
+console.log(typeof rr2);
+while(a<20){
+console.log(a);
+a++;
+}
+console.log(a);
+let g=1;
+while(g<10){
+console.log(g);
+g++;
+}
+let g1=1;
+do{
+console.log(g1);
+g1++;
+}while(g1<10)
+let arr=['sumalya','karthik','ahmed','zameer','christenson'];
+for(let r of arr){
+console.log(r);
+}
+for(let r in arr){
+console.log(arr[r]);
+}
+let arr2=[1,2,3,4,5,6,7,8,9,10];
+for(let r of arr2){
+console.log(r);
+}
+function aa(){
+console.log('hello');
+}
+aa();
+const ab=function(){
+console.log('hello');
+}
+ab();
+const ac=()=>{
+console.log('hello');
+}
+ac();
+arr.forEach(function(n){console.log(n)});
+arr.forEach(n=>console.log(n));
+arr2.forEach(n=>console.log(n));
+function dd(n){
+console.log(n);
+}
+arr.forEach(dd);
+arr.map(n=>console.log(n));
+(function(){console.log('hello')})()
+(function(){for(let i=0;i<10;i++){console.log(i);}})()
+function ffa(...a){
+console.log(a);
+}
+ffa(9);
+ffa([9,10]);
+ffa(12,13,14);
+function ffb(...a,b,c){
+function ffb(a,...b,c){
+function ffb(a,b,...c){
+console.log(a);
+}
+const [a,b]=[a:10,b:20];
+const {a11,b11}={a11:10,b11:20};
+console.log(a11);
+console.log(b11);
+const {a12,b12,c12}=[a12:'hello',b12:true,c12:[12,13,141,5]};
+const {a12,b12,c12}={a12:'hello',b12:true,c12:[12,13,141,5]};
+console.log(a12)
+console.log(b12)
+console.log(c12)
+const {a13,b13}={a13:{'name':'gani','email':'gani@yahoo.com'},b13:'hello'}
+console.log(a13)
+console.log(b13)
+console.log(a13.name)
+
+
+////
+
+var,let, const
+
+//normal function
+function ff(){
+console.log('hai');
+}
+//anonymous function
+const ff=function(){
+console.log('hai');
+}
+//arrow operator function
+const ff=()=>{
+console.log('hai');
+}
+
+Lambdas are short cuts to anonymous notation
+
+for
+forin
+forof
+forEach
+while
+do while
+map
+
+
+IIFE(Immediately Instantiable Function Expression):
+
+(
+function(){
+console.log('hello');
+}
+)()
+
+Anonymous
+normal
+lambda
+iife
+
+spread operator
+
+
+///
+
+var a=100;
+console.log(a);
+const a1=900;
+console.log(a1);
+let a2=102;
+console.log(a2);
+for(var b=0;b<11;b++){
+console.log(b);
+}
+console.log(b);
+for(let c=0;c<11;c++){
+console.log(c);
+}
+console.log(typeof a);
+let s='string is king';
+console.log(typeof s);
+let cc=true;
+console.log(cc);
+let rr;
+console.log(typeof rr);
+let rr2=null;
+console.log(typeof rr2);
+while(a<20){
+console.log(a);
+a++;
+}
+console.log(a);
+let g=1;
+while(g<10){
+console.log(g);
+g++;
+}
+let g1=1;
+do{
+console.log(g1);
+g1++;
+}while(g1<10)
+let arr=['sumalya','karthik','ahmed','zameer','christenson'];
+for(let r of arr){
+console.log(r);
+}
+for(let r in arr){
+console.log(arr[r]);
+}
+let arr2=[1,2,3,4,5,6,7,8,9,10];
+for(let r of arr2){
+console.log(r);
+}
+function aa(){
+console.log('hello');
+}
+aa();
+const ab=function(){
+console.log('hello');
+}
+ab();
+const ac=()=>{
+console.log('hello');
+}
+ac();
+arr.forEach(function(n){console.log(n)});
+arr.forEach(n=>console.log(n));
+arr2.forEach(n=>console.log(n));
+function dd(n){
+console.log(n);
+}
+arr.forEach(dd);
+arr.map(n=>console.log(n));
+(function(){console.log('hello')})()
+(function(){for(let i=0;i<10;i++){console.log(i);}})()
+function ffa(...a){
+console.log(a);
+}
+ffa(9);
+ffa([9,10]);
+ffa(12,13,14);
+function ffb(...a,b,c){
+function ffb(a,...b,c){
+  function ffb(a,b,...c){
+    console.log(a);
+    }
+  const [a,b]=[a:10,b:20];
+  const {a11,b11}={a11:10,b11:20};
+  console.log(a11);
+  console.log(b11);
+  const {a12,b12,c12}=[a12:'hello',b12:true,c12:[12,13,141,5]};
+const {a12,b12,c12}={a12:'hello',b12:true,c12:[12,13,141,5]};
+console.log(a12)
+console.log(b12)
+console.log(c12)
+const {a13,b13}={a13:{'name':'gani','email':'gani@yahoo.com'},b13:'hello'}
+console.log(a13)
+console.log(b13)
+console.log(a13.name)
+let myfun=new Function('a','b','return a+b');
+console.log(myfun(12,13));
+let myfun2=new Function('a','return Math.sqrt(a)');
+console.log(myfun2(2));
+let myfun3=new Function('a','b','return Math.pow(a,b)');
+console.log(myfun3(2,3));
+let myfun4=(a,b)=>{return Math.pow(a,b)}
+console.log(myfun4(2,3));
+function Cars(name,brand){
+this.name=name;
+this.brand=brand;
+}
+let cara=new Cars('Octavia','Skoda');
+console.log(cara);
+console.log(cara.name);
+console.log(cara['name']);
+let carb=new Cars('emapala','lincoln');
+console.log(JSON.stringify(carb));
+function Person(name,email)[
+function Person(name,email){
+this.name=name;
+this.email.email;
+}
+function Person(name,email){
+this.name=name;
+this.email=email;
+}
+let perb=new Person('Hanifa','hanifa@egypt.com');
+console.log(JSON.stringify(perb));
+class Book{
+constructor(name,author){
+  this.name=name;
+  this.author=author;
+  }
+}
+let book=new Book('Alice In Wonderland','Lewis Carrol');
+console.log(JSON.stringify(book));
+class PhysicsBook extends Book{
+constructor(name,author,sub){
+  super(name,author);
+  this.sub=sub;
+  }
+}
+let pha=new PhysicsBook('Nuclear Physics','Kensington','Atomic Physics');
+console.log(JSON.stringify(pha));
+
+///
+
+class AAA {
+    constructor(name) {
+        console.log('Parent Constructor');
+        this.name = name;
+    }
+    fetA() {
+        console.log('Hello Iam from Parent');
+    }
+}
+
+class BBB extends AAA {
+    constructor(name, email) {
+        super(name);
+        console.log('Child Constructor');
+        this.email = email;
+    }
+    fetA() {
+        console.log('Hello Iam Child Class');
+    }
+}
+
+class CCC {
+    constructor(name, brand) {
+        this.name = name;
+        this.brand = brand;
+    }
+    static fetB() {
+        console.log('Hello Iam Static Method');
+    }
+}
+
+let ccc = new CCC('Hyundai', 'Santro');
+// ccc.fetB();
+CCC.fetB();
+
+var bb = new BBB('sa', 'sa@yahoo.com');
+bb.fetA();
+
+///
+
+const { aa } = require("./filetwo");
+const { gg } = require("./filethree");
+var hh = require('./filefour');
+var mymod = require('./filefive');
+
+// var hha = new hh();
+var hhb = new mymod();
+// hha.aaa();
+// hha.bbb();
+// hha.ccc();
+
+let obj1 = new hhb.ClsA('ganesh', 'ganesh@yahoo.com');
+let obj2 = new hhb.Cars('Benz', 'Mercedes');
+console.log(JSON.stringify(obj1));
+console.log(JSON.stringify(obj2));
+
+
+
+// console.log(gg());
+
+// class AAA {
+//     constructor(name) {
+//         console.log('Parent Constructor');
+//         this.name = name;
+//     }
+//     fetA() {
+//         console.log('Hello Iam from Parent');
+//     }
+// }
+
+// class BBB extends AAA {
+//     constructor(name, email) {
+//         super(name);
+//         console.log('Child Constructor');
+//         this.email = email;
+//     }
+//     fetA() {
+//         console.log('Hello Iam Child Class');
+//     }
+// }
+
+// class CCC {
+//     constructor(name, brand) {
+//         this.name = name;
+//         this.brand = brand;
+//     }
+//     static fetB() {
+//         console.log('Hello Iam Static Method');
+//     }
+// }
+
+// let ccc = new CCC('Hyundai', 'Santro');
+// // ccc.fetB();
+// CCC.fetB();
+
+// var bb = new BBB('sa', 'sa@yahoo.com');
+// bb.fetA();
+
+// let ap = aa;
+// console.log(ap);
+
+//
+
+module.exports.aa = 'I have been struck by a lightening alas i survived';
+
+//
+
+function fffa() {
+    return Math.sqrt(2);
+}
+
+module.exports.gg = fffa;
+
+//
+module.exports = function () {
+    this.aaa = function () {
+        console.log('First Function');
+    }
+    this.bbb = function () {
+        console.log('Second Function');
+    }
+    this.ccc = function () {
+        console.log('Third Function');
+    }
+}
+
+///
+module.exports = function () {
+    this.ClsA = class {
+        constructor(name, email) {
+            this.name = name;
+            this.email = email;
+        }
+    }
+
+    this.Cars = function (name, brand, year) {
+        this.name = name;
+        this.brand = brand;
+        this.year = year;
+    }
+}
+
+///
+
+// let set = new Set();
+// for (let i = 1; i <= 20; i++) {
+//     set.add(i);
+// }
+// for (let i = 1; i <= 20; i++) {
+//     set.add(i);
+// }
+// for (let i = 1; i <= 20; i++) {
+//     set.add(i);
+// }
+// console.log(set);//removes duplicates
+
+// for (const itr of set) {
+//     console.log(itr);
+// }
+// set.forEach(n => console.log(n));
+let map = new Map();
+let arr1 = [1, 2, 3, 4, 5];
+let arr2 = ['hanifa', 'jubaid', 'manisha', 'kaivalya', 'ramesh'];
+for (let i = 0; i < arr1.length; i++) {
+    map.set(arr1[i], arr2[i]);
+}
+// console.log(map);
+
+// for (let i = 0; i < arr1.length; i++) {
+//     console.log(arr1[i] + '\t\t' + map.get(arr1[i]));
+// }
+
+// console.log(map.entries());
+console.log(map);
+// map.forEach(n => console.log(n));
+
+//Stack
+let arra = ['san', 'man', 'tan'];
+arra.push('lan');
+console.log(arra);
+arra.pop();
+console.log(arra);
+
+let arrb = Array.from(['satish', 'geeta', 'seeta', 'ghani', 'abdul']);
+console.log(arrb);
+let arrc = Array.from(map.keys());
+console.log(arrc);
+let arrd = Array.from(map.values());
+// console.log(arrd);
+arrd.forEach(n => console.log(n));
+let arre = Array.from(map.entries());
+// console.log(arre);
+arre.forEach(n => console.log(n[0] + ' ' + n[1]))
+
+
+///
+
+// let set = new Set();
+// for (let i = 1; i <= 20; i++) {
+//     set.add(i);
+// }
+// for (let i = 1; i <= 20; i++) {
+//     set.add(i);
+// }
+// for (let i = 1; i <= 20; i++) {
+//     set.add(i);
+// }
+// console.log(set);//removes duplicates
+
+// for (const itr of set) {
+//     console.log(itr);
+// }
+// set.forEach(n => console.log(n));
+let map = new Map();
+let arr1 = [1, 2, 3, 4, 5];
+let arr2 = ['hanifa', 'jubaid', 'manisha', 'kaivalya', 'ramesh'];
+for (let i = 0; i < arr1.length; i++) {
+    map.set(arr1[i], arr2[i]);
+}
+// console.log(map);
+
+// for (let i = 0; i < arr1.length; i++) {
+//     console.log(arr1[i] + '\t\t' + map.get(arr1[i]));
+// }
+
+// console.log(map.entries());
+console.log(map);
+// map.forEach(n => console.log(n));
+
+//Stack
+let arra = ['san', 'man', 'tan'];
+arra.push('lan');
+console.log(arra);
+arra.pop();
+console.log(arra);
+
+let arrb = Array.from(['satish', 'geeta', 'seeta', 'ghani', 'abdul']);
+console.log(arrb);
+let arrc = Array.from(map.keys());
+console.log(arrc);
+let arrd = Array.from(map.values());
+// console.log(arrd);
+arrd.forEach(n => console.log(n));
+let arre = Array.from(map.entries());
+// console.log(arre);
+arre.forEach(n => console.log(n[0] + ' ' + n[1]));
+let ad = false;
+// if (ad) {
+//     console.log('It is true');
+// } else {
+//     console.log('It is false');
+// }
+
+//ternary operator
+ad ? console.log('it is true') : console.log('it is false');
+
+let prom1 = new Promise((resolve, reject) => {
+    resolve('Hai there')
+});
+
+prom1.then(console.log);
+
+async function ddd() {
+    return 'Hello Iam Async';
+}
+
+let prom2 = new Promise((resolve, reject) => {
+    resolve(ddd());
+})
+
+prom2.then(console.log);
+console.log('***********');
+// let prom3 = new Promise((resolve, reject) => {
+//     resolve(setTimeout(() => {
+//         ddd()
+//     }, 5000))
+// })
+// prom3.then(console.log);
+
+let proma = new Promise((resolve, reject) => {
+    resolve('First Prom')
+})
+let promb = new Promise((resolve, reject) => {
+    resolve('Second Prom')
+})
+let promc = new Promise((resolve, reject) => {
+    resolve('Third Prom')
+})
+let promd = new Promise((resolve, reject) => {
+    resolve('Four Prom')
+})
+
+let arrprom = [proma, promb, promc, promd];
+// Promise.all(arrprom).then(n => {
+//     console.log(n);
+// });
+arrprom.forEach(n => {
+    n.then(console.log)
+})
+
+///
+
+let arr = ['satish', 'satish', 'satish', 'satish', 'karim', 'tejal', 'jugal', 'hari', 'ali', 'wahid', 'joseph'];
+
+// let itr = arr[Symbol.iterator]();
+
+// for (let b = itr.next(); b.done !== true; b = itr.next()) {
+//     console.log(b.value);
+// }
+let set = new Set();
+arr.forEach(n => set.add(n));
+
+let iter = set[Symbol.iterator]();
+for (let b = iter.next(); b.done !== true; b = iter.next()) {
+    console.log(b.value);
+}
+
+var t = 'ssss';
+// let ss=new Symbol(t);
+console.log(Symbol(t) === Symbol(t));
+
+let arra = [1, 2, 3, 4, 5];
+let arrb = ['a', 'e', 'i', 'o', 'u'];
+
+let map = new Map();
+for (let i = 0; i < arra.length; i++) {
+    map.set(arra[i], arrb[i]);
+}
+
+// let tt = map.keys();
+
+// let iter2 = tt[Symbol.iterator]();
+// for (let b = iter2.next(); b.done !== true; b = iter2.next()) {
+//     const tta = b.value;
+//     console.log(tta + ' ' + map.get(tta));
+// }
+
+let tt1 = map.entries();
+let iter3 = tt1[Symbol.iterator]();
+for (let b = iter3.next(); b.done !== true; b = iter3.next()) {
+    console.log(b.value[0] + ' ' + b.value[1]);
+}
+
+
+//
+
+function calcVolume(l) {
+    return function (b) {
+        return function (h) {
+            return l * b * h;
+        }
+    }
+}
+//currying
+let aa = calcVolume(1);
+let aa1 = aa(2);
+console.log(aa1(3));
+const MyVol = (l) => {
+    return (b) => {
+        return (h) => {
+            return l * b * h;
+        }
+    }
+}
+console.log(MyVol(1)(2)(3));
+
+///
+
+//generator function
+
+function* gen() {
+    console.log('First Generation');
+    yield 'First Gen';
+    console.log('Second Generation');
+    yield 'Second Gen';
+    console.log('Third Generation');
+    yield 'Third Gen';
+    console.log('Fourth Generation');
+    yield 'Fourth Gen';
+    console.log('Fifth Generation');
+    yield 'Fifth Gen';
+}
+
+let myiter = gen();
+console.log(myiter.next().value);
+console.log(myiter.next().value);//junction
+for (let i = 0; i < 1000; i++) {
+    console.log(i + 1);
+}
+console.log("I will do something else");//fork
+console.log(myiter.next().value);
+// for (let b = myiter.next(); b.done !== true; b = myiter.next()) {
+//     console.log(b.value);
+// }
+console.log('********');
+
+let myArr = ['Sunil', 'Ambarush', 'Ambrose', 'David', 'Hakim'];
+let myLen = myArr.length;
+
+function* myGen() {
+    let a = 0;
+    while (a < myLen) {
+        yield myArr[a];
+        a++;
+    }
+}
+
+let myVals = myGen();
+for (let b = myVals.next(); b.done !== true; b = myVals.next()) {
+    console.log(b.value);
+}
+console.log('**************');
+
+let arr1 = [1, 2, 3, 4, 5];
+let arr2 = ['Sunil', 'Anil', 'Akram', 'Wasim', 'Charles'];
+let myMap = new Map();
+for (let i = 0; i < arr1.length; i++) {
+    myMap.set(arr1[i], arr2[i]);
+}
+
+let len = arr1.length;
+
+function* MapGen() {
+    let a = 0;
+    while (a < len) {
+        yield Array.from(myMap.keys())[a];
+        a++;
+    }
+}
+
+let myItera = MapGen();
+// console.log(myItera.next().value);
+// console.log(myItera.next().value);
+// console.log(myItera.next().value);
+
+for (let b = myItera.next(); b.done !== true; b = myItera.next()) {
+    const c = b.value;
+    const c1 = myMap.get(c);
+    let rr = `The key of the map is ${c} and the value for the key is ${c1}`;
+    console.log(rr);
+}
+
+
+
+///
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Welcome to React</h1>
+        <CompA />
+        <CompB />
+        <MyCompC />
+        <MyCompD />
+        <MyCompE />
+        <MyCompF />
+        <MyCompG />
+        <MyCompH />
+      </div>
+    );
+  }
+}
+
+class CompA extends React.Component {
+  render() {
+    return (
+      <div>
+        <h2>Iam getting used to React!</h2>
+      </div>
+    );
+  }
+}
+
+class CompB extends React.Component {
+
+  render() {
+    return (
+      <div>
+        <h3>This is third Component</h3>
+      </div>
+    );
+  }
+}
+
+const MyCompC = class extends React.Component {
+  render() {
+    return (
+      <div>
+        <h4>Iam Fourth Component</h4>
+      </div>
+    );
+  }
+}
+
+function MyCompD(props) {
+  return (
+    <div>
+      <h5>This is Fifth Component</h5>
+    </div>
+  )
+}
+
+const MyCompE = function (props) {
+  return (<div>
+    <h6>Iam The Sixth Component</h6>
+  </div>)
+}
+
+const MyCompF = (props) => {
+  return (
+    <div>
+      <h1>Yet Another Component</h1>
+    </div>
+  )
+}
+
+const MyCompG = () => { return <>Hai</> }
+
+const MyCompH=function(){return <>Hello</>}
+class Cars {
+  constructor(name, brand) {
+    this.name = name;
+    this.brand = brand;
+  }
+}
+
+function retCars() {
+  let cArr = [];
+  let arr1 = ['Empala', 'Octavia', 'Eclass', 'Camry', 'Continental'];
+  let arr2 = ['Chevrolet', 'Skoda', 'Mercedes', 'Toyota', 'Lincoln'];
+  for (let i = 0; i < arr1.length; i++) {
+    let car = new Cars(arr1[i], arr2[i]);
+    cArr.push(car);
+  }
+  return cArr;
+}
+///
+
+///
+function App() {
+  let mystyle = {
+    backgroundColor: 'blue',
+    color: 'red'
+  }
+  return (
+    <>
+      {/* <button style={{ color: 'red', backgroundColor: 'blue' }}>Linux Button</button>
+      <br />
+      <input type="text" style={mystyle} />
+      <br />
+      <button className='mya'>Click Me</button> */}
+      <br />
+      <div className='jumbotron'>
+        <h1>My First Boot strap div</h1>
+      </div>
+      <br />
+      <button className='btn btn-danger'>Test</button>
+      <br />
+      <span className='badge'>satish</span>
+      <br />
+      <div className='alert alert-success'>Godzilla Vs kingkong</div>
+      <br />
+      <div className="container">
+        <div className="row">
+          <div className="col-sm">
+            <CompA />
+          </div>
+          <div className="col-sm">
+            <CompB />
+          </div>
+          <div className="col-sm">
+            <CompC />
+          </div>
+        </div>
+      </div>
+      <table className='table table-hover'>
+        <thead>
+          <tr><th>Name</th><th>Email</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Satish</td><td>sat@yahoo.com</td></tr>
+          <tr><td>Mukesh</td><td>muk@yahoo.com</td></tr>
+          <tr><td>Sarad</td><td>sarad@yahoo.com</td></tr>
+        </tbody>
+      </table>
+    </>
+
+  );
+}
+
+function CompA(props) {
+  return <><div className='jumbotron'>CompA Loaded Into Memory</div></>
+}
+function CompB(props) {
+  return <><span className='badge'>CompB Loaded Into Memory</span></>
+}
+function CompC(props) {
+  return <><label className='lbl lbl-success'>CompC Loaded Into Memory</label></>
+}
+export default App;
+
+
+
+class Cars {
+    constructor(name, brand, descr) {
+        this.name = name;
+        this.brand = brand;
+        this.descr = descr;
+    }
+}
+
+export default Cars;
+
+//
+
+import Cars from "./Cars";
+
+export function retCars() {
+    let cArr = [];
+    let arr1 = ['empala', 'octavia', 'camry', 'punto', 'eclass'];
+    let arr2 = ['Chevorlet', 'Skoda', 'Toyota', 'Fiat', 'Mercedes'];
+    let arr3 = ['A single owner car', 'Well furnished car', 'A decent old car', 'A popular brand well maintained', 'A luxury car par excellent']
+    for (let i = 0; i < arr1.length; i++) {
+        let car = new Cars(arr1[i], arr2[i], arr3[i]);
+        cArr.push(car);
+    }
+    return cArr;
+}
+
+///
+
+import React from 'react';
+import { retCars } from './myfun';
+class CarComp extends React.Component {
+    render() {
+        return (
+            <>
+                <div className='jumbotron'><h1>Car Portal </h1><small>Cars For Sale</small></div>
+                <br />
+                {
+                    retCars().map(car => <>
+                        <div className="card" style={{ width: '18rem' }}>
+                            <div className="card-body">
+                                <h5 className="card-title">{car.brand}</h5>
+                                <h6 className="card-subtitle mb-2 text-muted">{car.name}</h6>
+                                <p className="card-text">{car.descr}</p>
+                                <a href="#" className="card-link">Buy The Car</a>
+                                <a href="#" className="card-link">Sell The Car</a>
+                            </div>
+                        </div>
+                        <br /><hr /><br />
+                    </>)
+                }
+            </>
+        );
+    }
+
+
+
+
+}
+
+export default CarComp;
+
+///
+
+
+<App pp={'Guns Of Navarone'} />
+
+///
+  <h2>{props.pp}</h2>
+      <br />
+      <BComp l={'Soumaya'} p={'Mohit'} />
+
+///
+import React from "react";
+import BBComp from "./BBComp";
+
+function BComp(props) {
+    return (
+        <>
+            <h1>{props.l}</h1>
+            <br />
+            <h1>{props.p}</h1>
+            <br />
+            <div style={{ backgroundColor: 'black', color: 'white' }}><BBComp j={props.l} /></div>
+        </>
+    )
+}
+
+export default BComp;
+
+///
+import React from "react";
+
+const BBComp = (props) => {
+    return <>{props.j}</>
+}
+
+export default BBComp;
+///
+
+
+import React from "react";
+import BComp from "./BComp";
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      a: 'Iam a state variable',
+      b: 0,
+      c: true,
+      d: { name: 'sat', email: 'sat@yahoo.com' },
+      e: ['Ganapati', 'Mohammed', 'Ali', 'Christ', 'Thomas']
+    }
+  }
+
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ a: 'Africa is the center of the world' });
+    }, 5000);
+    this.setState({ b: 100 });
+    this.setState({ c: false });
+    this.setState({ d: { name: 'dundigal', email: 'dundi@croc.com' } })
+  }
+
+  render() {
+    return (
+      <>
+        {this.state.a}<br />
+        {this.state.b}<br />
+        {this.state.c ? <b>Hello</b> : <i>Hai</i>}<br />
+        {JSON.stringify(this.state.d)}
+        {
+          this.state.e.map(n => <p>{n}</p>)
+        }
+        <BComp l={this.state.a} />
+      </>
+    )
+  }
+}
+
+
+export default App;
+
+
+
+///
+
+import React, { useEffect, useState } from "react";
+
+function NAPP(props) {
+    const [a, SetA] = useState('');
+    const [b, SetB] = useState('');
+    const [c, SetC] = useState(0);
+
+    useEffect(() => {
+        SetA('Iam A New Value');
+        SetB('new Value');
+        SetC(100);
+    }, [a, b, c])
+
+    return <>
+        <h1>{a}</h1>
+        <br />
+        <h2>{b}</h2>
+        <br />
+        <h3>{c}</h3>
+    </>
+}
+
+export default NAPP;
+
+///
+
+///
+
+class Books {
+    constructor(name, author) {
+        this.name = name;
+        this.author = author;
+    }
+}
+
+export default Books;
+
+
+
+
+///
+
+import Books from "./Books";
+import Cars from "./Cars";
+
+export function retCars() {
+    let cArr = [];
+    let arr1 = ['empala', 'octavia', 'camry', 'punto', 'eclass'];
+    let arr2 = ['Chevorlet', 'Skoda', 'Toyota', 'Fiat', 'Mercedes'];
+    let arr3 = ['A single owner car', 'Well furnished car', 'A decent old car', 'A popular brand well maintained', 'A luxury car par excellent']
+    for (let i = 0; i < arr1.length; i++) {
+        let car = new Cars(arr1[i], arr2[i], arr3[i]);
+        cArr.push(car);
+    }
+    return cArr;
+}
+
+export function retBooks() {
+    let bArr = [];
+    let arr1 = ['Pelican Brief', 'Adventures of tom sawyer', 'Banco', 'Kane And Abel', 'Silence of the moor'];
+    let arr2 = ['John Grisham', 'Mark Twain', 'Lafeyyet', 'Jefferey Archer', 'Salman Rushdie'];
+    for (let i = 0; i < arr1.length; i++) {
+        let book = new Books(arr1[i], arr2[i]);
+        bArr.push(book);
+    }
+    return bArr;
+}
+
+///
+
+import React from "react";
+import { retBooks } from "./myfun";
+
+function BookComp(props) {
+    return (
+        <>
+            <table className="table table-striped">
+                <thead>
+                    <tr><th>Name Of The Book</th><th>Author Of The Book</th></tr>
+                </thead>
+                <tbody>
+                    {
+                        retBooks().map(book => <tr><td>{book.name}</td><td>{book.author}</td></tr>)
+                    }
+                </tbody></table>
+        </>
+    )
+}
+
+export default BookComp;
+
+///
+
+ <BookComp />
+
+
+/////DAY 3
+
+
+
+//Only Applies to class Components:
+Mounting:
+There are four built in methods which are fired in the same order when the component loads into memory:
+-constructor():Method of a class which fires first and only once the when the object is created
+-getDerivedStateFromProps():To Load defaults and ensure all the values are correctly populated
+-render():
+What you see on you on your screen
+-componentDidMount():
+Is used to load the data into state variables or make changes, usually this method is used to load data from api into the state variables
+
+class MyCom extends React.Component{}
+
+Update:
+-getDerivedStateFromProps()
+-shouldComponentUpdate():
+Booelan value which returns true if the state is changing in the parent component
+-render():
+-getSnapShotBeforeUpdate():
+It tracks the value of state and prop and retains the prev value of state
+-componentDidUpdate():boolean
+
+unmount:
+componentWillUnmount()
+
+///
+
+
+import React from "react";
+
+class Header extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            fav: 'red'
+        }
+    }
+
+
+    componentDidMount() {
+        setTimeout(() => {
+            this.setState({ fav: 'blue' });
+        }, 3000);
+    }
+
+
+    getSnapshotBeforeUpdate(prevprops, prevstate) {
+        console.log('*******' + prevstate.fav);
+        return null;
+    }
+
+    componentDidUpdate() {
+        console.log(this.state.fav);
+        return true;
+    }
+
+    render() {
+        return (
+            <>
+                <h1>My Favorite color is :{this.state.fav}</h1>
+            </>
+        );
+    }
+
+}
+
+export default Header;
+
+///
+
+import React from "react";
+
+class MyContainer extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            show: true
+        }
+    }
+
+    del = () => {
+        this.setState({ show: false })
+    }
+
+    render() {
+        let myHead;
+
+        if (this.state.show) {
+            myHead = <MyChild />
+        }
+        return (
+            <>
+                {myHead}
+                <br />
+                <button onClick={this.del}>Delete Comp</button>
+            </>
+        );
+    }
+}
+
+
+class MyChild extends React.Component {
+    componentWillUnmount() {
+        alert('Unmounted My Child from UI');
+    }
+    render() {
+        return (
+            <>
+                <h1 style={{ backgroundColor: 'blueviolet', color: 'wheat' }}>
+                    Test My Child Component
+                </h1>
+            </>
+        );
+    }
+}
+
+export default MyContainer;
+
+////
+
+////
+
+https://github.com/primefaces/primereact-examples/tree/main/cra-basic
+
+///
+
+import React from "react";
+
+class CompEveTester extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            arr: ['satish', 'shahjada', 'tarannum', 'tewari', 'shabana', 'americano', 'andol', 'banswada', 'bankok', 'cairo', 'calicut']
+        }
+        this.onBtnClick = this.onBtnClick.bind(this);
+        this.onChT = this.onChT.bind(this);
+        this.onCl = this.onCl.bind(this);
+    }
+
+    onBtnClick(e) {
+        alert('Button Clicked');
+    }
+
+    onChT(e) {
+        alert(e.target.value);
+    }
+
+
+    onCl(e) {
+        alert(e.target.value);
+    }
+
+    render() {
+        return (
+            <>
+                <button style={{ backgroundColor: 'chocolate', color: 'blue' }} onClick={this.onBtnClick}>Click Me</button>
+                <br />
+                <input type="text" onChange={this.onChT} />
+                <br />
+                Select Your fav city:<select onChange={this.onChT}>
+                    <option value="Tunis">Tunis</option>
+                    <option value="Adis Ababa">Adis Ababa</option>
+                    <option value="Maputo">Maputo</option>
+                    <option value="Cairo">Cairo</option>
+                </select>
+                <br />
+                <input type="radio" name="r1" value="Male" onClick={this.onCl} />Male
+                <input type="radio" name="r1" value="Female" onClick={this.onCl} />Female
+                <br />
+                <input type="checkbox" name="r2" onClick={this.onCl} value="Vegan" />Vegan
+                <br />
+                <input type="text" list="li" onChange={this.onChT} />
+                <datalist id="li">
+                    {
+                        this.state.arr.map(n => <option>{n}</option>)
+                    }
+                </datalist>
+
+            </>
+        );
+    }
+}
+
+export default CompEveTester;
+
+///
+https://github.com/primefaces/primereact-examples/tree/main/cra-basic
+
+///
+
+import React from "react";
+
+ ///
+
+import React from "react";
+import CompA from "./CompA";
+import CompB from "./CompB";
+import CompC from "./CompC";
+
+class CompEveVal extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            a: ''
+        }
+    }
+
+
+    del = (e) => {
+        alert(e.target.value);
+    }
+
+
+    render() {
+        return (
+            <>
+                <button onClick={(e) => {//Synthetic Event
+                    alert('Iam Clicked');
+                }}>Click Me</button>
+                <br />
+                <button value="Einstein" onClick={(e) => this.del(e)}>Test</button>
+                <br />
+                <input type="text" onChange={(e) => { this.setState({ a: e.target.value }) }} />
+                <br />
+                The value in textbox is :{this.state.a}
+
+                <ul style={{ listStyleType: 'none' }}>
+                    <li><CompA a={this.state.a} /></li>
+                    <li><CompB a={this.state.a} /></li>
+                    <li><CompC a={this.state.a} /></li>
+                </ul>
+                <br />
+
+            </>
+        );
+    }
+}
+
+export default CompEveVal;
+
+//
+
+import React from "react";
+
+function CompA(props) {
+    return <h1>CompA Receives Value:{props.a}</h1>
+}
+
+export default CompA;
+
+//
+
+import React from "react";
+
+function CompB(props) {
+    return <h1>CompB Receives Value:{props.a}</h1>
+}
+
+export default CompB;
+
+//
+import React from "react";
+
+function CompC(props) {
+    return <h1>CompC Receives Value:{props.a}</h1>
+}
+
+export default CompC;
+
+//
+
+
+mysql> create table countlist(cid int primary key,cname varchar(50));
+
+
+mysql> insert into countlist values(1,'Tunsia');
+
+
+mysql> insert into countlist values(2,'New Delhi');
+
+
+mysql> insert into countlist values(3,'Adis Ababa');
+
+
+mysql> insert into countlist values(4,'Cape town');
+
+
+mysql> insert into countlist values(5,'Johannesberg');
+
+
+mysql> insert into countlist values(6,'Patna');
+
+
+mysql> update countlist set cname='Tunis' where cid=1;
+
+////
+
+import React from "react";
+
+class CountListComp extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            data: []
+        }
+    }
+
+    componentDidMount() {
+        fetch('http://localhost:8080/serv/clist')
+            .then(a => a.json())
+            .then(r => this.setState({ data: r }))
+    }
+
+
+    render() {
+        return (
+            <>
+                <table border="1">
+                    <tr><td>City Id</td><td>City Name</td></tr>
+                    {
+                        this.state.data.map(n => <tr><td>{n.cid}</td><td>{n.cname}</td></tr>)
+                    }
+                </table>
+            </>
+        );
+    }
+}
+
+export default CountListComp;
+
+///
+
+
+///ServComp .js
+
+import React from "react";
+
+class ServComp extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            data: []
+        }
+    }
+    componentDidMount() {
+        fetch('https://jsonplaceholder.typicode.com/todos')
+            .then(a => a.json())
+            .then(b => this.setState({ data: b }))
+    }
+    render() {
+        return (
+            <>
+                <ul>
+                    {
+                        this.state.data.map(n => <li>{n.id}&nbsp;{n.title}</li>)
+                    }
+                </ul>
+            </>
+        );
+    }
+
+
+}
+
+export default ServComp;
+
+///
+
+
+//form///FormComp .js
+
+import React from "react";
+
+class FormComp extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            data: '',
+            cname: '',
+            cemail: '',
+            cmobile: '',
+            cpassword: '',
+            ccpassword:''
+        }
+    }
+
+    onCha(e) {
+        let a = e.target.name;
+        let b = e.target.value;
+        this.setState({ [a]: b });
+    }
+
+    onSub(e) {
+        e.preventDefault();
+        let cls = new DataCls(this.state.cname, this.state.cemail, this.state.cmobile,this.state.cpassword,this.state.ccpassword);
+        // alert(JSON.stringify(cls));
+        this.setState({ data: JSON.stringify(cls) })
+    }
+
+    render() {
+        return (
+            <>
+                <form onSubmit={(e) => this.onSub(e)}>
+                    <table border="1">
+                        <tr><td>Name</td><td><input type="text" maxLength="30" name="cname" required="true" onChange={(e) => this.onCha(e)} /></td></tr>
+                        <tr><td>Email</td><td><input type="email" name="cemail" required="true" onChange={(e) => this.onCha(e)} /></td></tr>
+                        <tr><td>Mobile</td><td><input type="text" name="cmobile" required="true" onChange={(e) => this.onCha(e)} /></td></tr>
+                        <tr><td>Password</td><td><input type="text" name="cpassword" required="true" onChange={(e) => this.onCha(e)} /></td></tr>
+                        <tr><td>Confirm Password</td><td><input type="text" name="ccpassword" required="true" onChange={(e) => this.onCha(e)} /></td></tr>
+                        <tr><td><input type="submit" value="Save" /></td><td><input type="reset" value="Cancel" /></td></tr>
+                    </table>
+                </form>
+                <br />
+                The form submitted values are:{this.state.data}
+            </>
+        );
+    }
+
+
+}
+
+
+class DataCls {
+    constructor(name, email, mobile,cpassword,ccpassword) {
+        this.name = name;
+        this.email = email;
+        this.mobile = mobile;
+        this.cpassword =cpassword;
+        this.ccpassword =ccpassword
+    }
+}
+
+export default FormComp;
+
+
+////
+
+
+
+///FunForm.js
+
+import React, { useEffect, useState } from "react";
+
+function FunForm(props) {
+    const [cname, SetCname] = useState('');
+    const [cemail, SetCemail] = useState('');
+    const [cmobile, SetCmobile] = useState('');
+    const [ccountry, SetCcountry] = useState('');
+    useEffect(() => {
+    }, [cname, cemail, cmobile, ccountry])
+    return (
+        <>
+            <form onSubmit={(e) => {
+                e.preventDefault();
+                alert(cname + ' ' + cemail + ' ' + cmobile + ' ' + ccountry);
+            }}>
+                <table border="1">
+                    <tr><td>Name</td><td><input type="text" maxLength="30" name="cname" required="true" onChange={(e) => { SetCname(e.target.value) }} /></td></tr>
+                    <tr><td>Email</td><td><input type="email" name="cemail" required="true" onChange={(e) => { SetCemail(e.target.value) }} /></td></tr>
+                    <tr><td>Mobile</td><td><input type="text" name="cmobile" required="true" onChange={(e) => { SetCmobile(e.target.value) }} /></td></tr>
+                    <tr><td>Country</td><td>
+                        <select onChange={(e) => {
+                            SetCcountry(e.target.value)
+                        }}>
+                            <option value="India">India</option>
+                            <option value="Tunisia">Tunisia</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="China">China</option>
+                            <option value="Japan">Japan</option>
+                        </select>
+                    </td></tr>
+                    <tr><td><input type="submit" value="Save" /></td><td><input type="reset" value="Cancel" /></td></tr>
+                </table>
+            </form>
+        </>
+    )
+}
+
+export default FunForm;
+
+///FunForm.js
+
+
+import React, { useEffect, useState } from "react";
+function FunForm(props) {
+    const [cname, SetCname] = useState('');
+    const [cemail, SetCemail] = useState('');
+    const [cmobile, SetCmobile] = useState('');
+    const [ccountry, SetCcountry] = useState('');
+    const [fin, SetFin] = useState('');
+    useEffect(() => {
+    }, [cname, cemail, cmobile, ccountry, fin])
+    return (
+        <>
+            <form onSubmit={(e) => {
+                e.preventDefault();
+                let obj = new CDataForm(cname, cemail, cmobile, ccountry);
+                //alert(cname + ' ' + cemail + ' ' + cmobile + ' ' + ccountry);
+                SetFin(JSON.stringify(obj));
+            }}>
+                <table border="1">
+                    <tr><td>Name</td><td><input type="text" maxLength="30" name="cname" required="true" onChange={(e) => { SetCname(e.target.value) }} /></td></tr>
+                    <tr><td>Email</td><td><input type="email" name="cemail" required="true" onChange={(e) => { SetCemail(e.target.value) }} /></td></tr>
+                    <tr><td>Mobile</td><td><input type="text" name="cmobile" required="true" onChange={(e) => { SetCmobile(e.target.value) }} /></td></tr>
+                    <tr><td>Country</td><td>
+                        <select onChange={(e) => {
+                            SetCcountry(e.target.value)
+                        }}>
+                            <option value="India">India</option>
+                            <option value="Tunisia">Tunisia</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="China">China</option>
+                            <option value="Japan">Japan</option>
+                        </select>
+                    </td></tr>
+                    <tr><td><input type="submit" value="Save" /></td><td><input type="reset" value="Cancel" /></td></tr>
+                </table>
+            </form>
+            <div style={{ backgroundColor: 'wheat', color: 'blueviolet' }}>{fin}</div>
+        </>
+    )
+}
+class CDataForm {
+    constructor(name, email, mobile, country) {
+        this.name = name;
+        this.email = email;
+        this.mobile = mobile;
+        this.country = country;
+    }
+}
+export default FunForm;
+
+////
+
+
+
+//////24/01/2022
+
+
+///
+
+const theme = {
+    light: {
+        foreground: '#000000',
+        background: '#eeeeee'
+    },
+    dark: {
+        foreground: '#ffffff',
+        background: '#222222'
+    }
+}
+
+export default theme;
+
+///
+
+import React, { useRef } from "react";
+
+function AComp(props) {
+    const inp = useRef(null);//Hook to point to a component in UI
+    const onButtonClick = () => {
+        inp.current.focus();
+    }
+    return (
+        <>
+            A:<input type="text" /><br />
+            B:<input type="text" /><br />
+            C:<input type="text" ref={inp} /><br />
+            D:<input type="text" /><br />
+            <button onClick={onButtonClick}>Click Me</button>
+        </>
+    );
+}
+
+export default AComp;
+
+///
+
+import React from "react"
+import theme from "./mytheme"
+
+const themeContext = React.createContext(theme.light);
+
+export default themeContext;
+
+
+//
+import React from "react";
+import ThemedButton from "./ThemedButton";
+
+function Toolbar(props) {
+    return (
+        <>
+            {/* <ThemedButton /> */}
+            {
+                ['Einstein', 'Newton', 'Ramanujam', 'Pascal', 'Bose'].map(n => <ThemedButton a={n} />)
+            }
+        </>
+    )
+}
+
+export default Toolbar;
+
+///
+import React, { useContext } from "react";
+import themeContext from "./mycontext";
+
+function ThemedButton(props) {
+    const theme = useContext(themeContext);//Hook only works in fun comp
+    return (
+        <>
+            <button style={{ backgroundColor: theme.background, color: theme.foreground }}>
+                {props.a}
+            </button>
+        </>
+    );
+}
+
+export default ThemedButton;
+
+///
+
+import React from "react";
+import TTComp from "./TTComp";
+
+function TComp(props) {
+    return (
+        <>
+            <TTComp />
+        </>
+    )
+}
+
+export default TComp;
+
+//
+
+import React from "react";
+import TTTComp from "./TTTComp";
+
+function TTComp(props) {
+    return (
+        <>
+            <TTTComp />
+        </>
+    )
+}
+
+export default TTComp;
+
+///
+import React from "react";
+import themeContext from "./mycontext";
+
+function TTTComp(props) {
+    const theme = React.useContext(themeContext);
+    return (
+        <>
+            <input type="text" style={{ backgroundColor: theme.background, color: theme.foreground }} />
+        </>
+    )
+}
+
+export default TTTComp;
+
+///
+
+import React from "react";
+import TComp from "./TComp";
+import ThemedButton from "./ThemedButton";
+
+function Toolbar(props) {
+    return (
+        <>
+            {/* <ThemedButton /> */}
+            {
+                ['Einstein', 'Newton', 'Ramanujam', 'Pascal', 'Bose'].map(n => <ThemedButton a={n} />)
+            }
+            <br />
+            <TComp />
+        </>
+    )
+}
+
+export default Toolbar;
+
+///
+
+import logo from './logo.svg';
+import './App.css';
+import themeContext from './mycontext';
+import theme from './mytheme';
+import Toolbar from './MyToolBar';
+import AComp from './AComp';
+
+function App() {
+  return (
+    <div>
+      <themeContext.Provider value={theme.dark}>
+        <Toolbar />
+      </themeContext.Provider>
+      <br />
+      <AComp />
+    </div>
+  );
+}
+
+export default App;
+
+
+///
+
+import React, { useRef } from "react";
+
+function AComp(props) {
+    const inp = useRef(null);//Hook to point to a component in UI
+    const onButtonClick = () => {
+        inp.current.focus();
+    }
+    return (
+        <>
+            A:<input type="text" /><br />
+            B:<input type="text" /><br />
+            C:<input type="text" ref={inp} /><br />
+            D:<input type="text" /><br />
+            <button onClick={onButtonClick}>Click Me</button>
+        </>
+    );
+}
+
+export default AComp;
+
+////////////
+ <authContext.Provider value={{ auth: auth, login: login, logout: logout }}>
+        <p>
+          {auth ? <Logout /> : <Login />}
+        </p>
+        <br />
+
+      </authContext.Provider>
+
+import React, { useRef } from "react";
+
+function AComp(props) {
+    const inp = useRef(null);//Hook to point to a component in UI
+    const onButtonClick = () => {
+        inp.current.focus();
+    }
+    return (
+        <>
+            A:<input type="text" /><br />
+            B:<input type="text" /><br />
+            C:<input type="text" ref={inp} /><br />
+            D:<input type="text" /><br />
+            <button onClick={onButtonClick}>Click Me</button>
+        </>
+    );
+}
+
+export default AComp;
+
+///
+
+import React from "react";
+import authContext from "./AuthContext";
+import Logins from "./logsi";
+
+class Login extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            username: '',
+            password: '',
+            validity: false
+        }
+    }
+    static contextType = authContext;
+    render() {
+        return (
+            <>
+                <p>You need to login to goto our site!</p>
+                <form onSubmit={(e) => {
+                    e.preventDefault();
+                    const valids = localStorage.getItem("logins");
+                    const lvalids = new Logins(this.state.username, this.state.password);
+                    if (valids === JSON.stringify(lvalids)) {
+                        alert('Correct login');
+                    } else {
+                        alert('reneter values');
+                    }
+                }
+
+                }>
+                    <table>
+                        <tr><td>username</td><td><input name="username" type="text" onChange={(e) => {
+                            this.setState({ username: e.target.value })
+                        }} /></td></tr>
+                        <tr><td>password</td><td><input name="password" type="password" onChange={(e) => {
+                            this.setState({ password: e.target.value })
+                        }} /></td></tr>
+                        <tr><td><input type="submit" value="Login" /></td><td><input type="reset" value="Cancel" /></td></tr>
+                    </table>
+                </form>
+                {/* <button onClick={this.context.login}>Login</button> */}
+            </>
+        );
+    }
+}
+
+
+
+export default Login;
+
+///
+
+import logo from './logo.svg';
+import './App.css';
+import themeContext from './mycontext';
+import theme from './mytheme';
+import Toolbar from './MyToolBar';
+import AComp from './AComp';
+import { useEffect, useState } from 'react';
+import authContext from './AuthContext';
+import Login from './Login';
+import Logout from './Logout';
+import Logins from './logsi';
+
+function App() {
+
+  const [auth, SetAuth] = useState(false);
+
+  useEffect(() => {
+    let ss = new Logins('tester', 'tester');
+    localStorage.setItem('logins', JSON.stringify(ss));
+  }, [auth])
+
+  const login = () => {
+    SetAuth(true);
+  }
+
+  const logout = () => {
+    SetAuth(false);
+  }
+
+  return (
+    <div>
+      {/* <themeContext.Provider value={theme.dark}>
+        <Toolbar />
+      </themeContext.Provider>
+      <br />
+      <AComp /> */}
+
+      <authContext.Provider value={{ auth: auth, login: login, logout: logout }}>
+        {/* <p>
+          {auth ? <Logout /> : <Login />}
+        </p>
+        <br /> */}
+        <Login />
+
+      </authContext.Provider>
+
+
+
+    </div>
+  );
+}
+
+
+export default App;
+///
+
+export default class Logins {
+    constructor(username, password) {
+        this.username = username;
+        this.password = password;
+    }
+}
+
+///
+
+import React from "react";
+import authContext from "./AuthContext";
+
+class Logout extends React.Component {
+    static contextType = authContext;
+    render() {
+        return (
+            <>
+                <p>Welcome to our web site click on logout to logout</p>
+                <button onClick={this.context.logout}>Logout</button>
+            </>
+        );
+    }
+}
+
+export default Logout;
+
+///
+                <nav className="navbar navbar-expand-lg navbar-light bg-info">
+                    <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+                        <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li className="nav-item active">
+                                <a className="nav-link" href="#">Home</a>
+                            </li>
+                            <li className="nav-item active">
+                                <a className="nav-link" href="#">Link</a>
+                            </li>
+                            <li className="nav-item active">
+                                <a className="nav-link">Link</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+///
+
+import React from "react";
+import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
+import About from "./About";
+import Contact from "./Contact";
+import Home from "./Home";
+import Projects from "./Projects";
+
+
+class NApp extends React.Component {
+
+    render() {
+        return (
+            <>
+                <Router>
+                    <nav className="navbar navbar-expand-lg navbar-light bg-danger">
+                        <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+                            <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+                                <li className="nav-item active">
+                                    <Link className="btn btn-info" to="/home">Home</Link>
+                                </li>&nbsp;
+                                <li className="nav-item active">
+                                    <Link className="btn btn-info" to="/about">About</Link>
+                                </li>&nbsp;
+                                <li className="nav-item active">
+                                    <Link className="btn btn-info" to="/contact">Contact</Link>
+                                </li>&nbsp;
+                                <li className="nav-item active">
+                                    <Link className="btn btn-info" to="/projects">Projects</Link>
+                                </li>&nbsp;
+                            </ul>
+                        </div>
+                    </nav>
+                    <Switch>
+                        <Route path="/home">
+                            <Home />
+                        </Route>
+                        <Route path="/about">
+                            <About />
+                        </Route>
+                        <Route path="/contact">
+                            <Contact />
+                        </Route>
+                        <Route path="/projects">
+                            <Projects />
+                        </Route>
+
+                    </Switch>
+
+                </Router>
+
+            </>
+        );
+    }
+}
+
+export default NApp;
+
+///
+
+import React from "react";
+
+function Home(props) {
+    return <h1 className="alert alert-danger">Welcome to home component</h1>
+}
+
+export default Home;
+
+//
+
+import React from "react";
+
+function About(props) {
+    return <h1 className="alert alert-success">Welcome to about us component</h1>
+}
+
+export default About;
+
+///
+
+import React from "react";
+
+function Contact(props) {
+    return <h1 className="alert alert-info">Welcome to Contact component</h1>
+}
+
+export default Contact;
+
+//
+
+import React from "react";
+
+function Projects(props) {
+    return <h1 className="alert alert-warning">Welcome to Projects component</h1>
+}
+
+export default Projects;
+
+
+/////
+export default Login;
+
+///
+import React from "react";
+import authContext from "./AuthContext";
+
+class Logout extends React.Component {
+    static contextType = authContext;
+    render() {
+        return (
+            <>
+                <p>Welcome to our web site click on logout to logout</p>
+                <button onClick={this.context.logout}>Logout</button>
+            </>
+        );
+    }
+}
+
+export default Logout;
+
+////
+ <authContext.Provider value={{ auth: auth, login: login, logout: logout }}>
+        <p>
+          {auth ? <Logout /> : <Login />}
+        </p>
+        <br />
+
+      </authContext.Provider>
+
+import React, { useRef } from "react";
+
+function AComp(props) {
+    const inp = useRef(null);//Hook to point to a component in UI
+    const onButtonClick = () => {
+        inp.current.focus();
+    }
+    return (
+        <>
+            A:<input type="text" /><br />
+            B:<input type="text" /><br />
+            C:<input type="text" ref={inp} /><br />
+            D:<input type="text" /><br />
+            <button onClick={onButtonClick}>Click Me</button>
+        </>
+    );
+}
+
+export default AComp;
+
+///
+
+import React from "react";
+import authContext from "./AuthContext";
+import Logins from "./logsi";
+
+class Login extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            username: '',
+            password: '',
+            validity: false
+        }
+    }
+    static contextType = authContext;
+    render() {
+        return (
+            <>
+                <p>You need to login to goto our site!</p>
+                <form onSubmit={(e) => {
+                    e.preventDefault();
+                    const valids = localStorage.getItem("logins");
+                    const lvalids = new Logins(this.state.username, this.state.password);
+                    if (valids === JSON.stringify(lvalids)) {
+                        alert('Correct login');
+                    } else {
+                        alert('reneter values');
+                    }
+                }
+
+                }>
+                    <table>
+                        <tr><td>username</td><td><input name="username" type="text" onChange={(e) => {
+                            this.setState({ username: e.target.value })
+                        }} /></td></tr>
+                        <tr><td>password</td><td><input name="password" type="password" onChange={(e) => {
+                            this.setState({ password: e.target.value })
+                        }} /></td></tr>
+                        <tr><td><input type="submit" value="Login" /></td><td><input type="reset" value="Cancel" /></td></tr>
+                    </table>
+                </form>
+                {/* <button onClick={this.context.login}>Login</button> */}
+            </>
+        );
+    }
+}
+
+
+
+export default Login;
+
+///
+
+import logo from './logo.svg';
+import './App.css';
+import themeContext from './mycontext';
+import theme from './mytheme';
+import Toolbar from './MyToolBar';
+import AComp from './AComp';
+import { useEffect, useState } from 'react';
+import authContext from './AuthContext';
+import Login from './Login';
+import Logout from './Logout';
+import Logins from './logsi';
+
+function App() {
+
+  const [auth, SetAuth] = useState(false);
+
+  useEffect(() => {
+    let ss = new Logins('tester', 'tester');
+    localStorage.setItem('logins', JSON.stringify(ss));
+  }, [auth])
+
+  const login = () => {
+    SetAuth(true);
+  }
+
+  const logout = () => {
+    SetAuth(false);
+  }
+
+  return (
+    <div>
+      {/* <themeContext.Provider value={theme.dark}>
+        <Toolbar />
+      </themeContext.Provider>
+      <br />
+      <AComp /> */}
+
+      <authContext.Provider value={{ auth: auth, login: login, logout: logout }}>
+        {/* <p>
+          {auth ? <Logout /> : <Login />}
+        </p>
+        <br /> */}
+        <Login />
+
+      </authContext.Provider>
+
+
+
+    </div>
+  );
+}
+
+
+export default App;
+///
+
+export default class Logins {
+    constructor(username, password) {
+        this.username = username;
+        this.password = password;
+    }
+}
+
+///
+
+import React from "react";
+import authContext from "./AuthContext";
+
+class Logout extends React.Component {
+    static contextType = authContext;
+    render() {
+        return (
+            <>
+                <p>Welcome to our web site click on logout to logout</p>
+                <button onClick={this.context.logout}>Logout</button>
+            </>
+        );
+    }
+}
+
+export default Logout;
+
+///
+                <nav className="navbar navbar-expand-lg navbar-light bg-info">
+                    <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+                        <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li className="nav-item active">
+                                <a className="nav-link" href="#">Home</a>
+                            </li>
+                            <li className="nav-item active">
+                                <a className="nav-link" href="#">Link</a>
+                            </li>
+                            <li className="nav-item active">
+                                <a className="nav-link">Link</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+///
+
+import React from "react";
+import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
+import About from "./About";
+import Contact from "./Contact";
+import Home from "./Home";
+import Projects from "./Projects";
+
+
+class NApp extends React.Component {
+
+    render() {
+        return (
+            <>
+                <Router>
+                    <nav className="navbar navbar-expand-lg navbar-light bg-danger">
+                        <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+                            <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+                                <li className="nav-item active">
+                                    <Link className="btn btn-info" to="/home">Home</Link>
+                                </li>&nbsp;
+                                <li className="nav-item active">
+                                    <Link className="btn btn-info" to="/about">About</Link>
+                                </li>&nbsp;
+                                <li className="nav-item active">
+                                    <Link className="btn btn-info" to="/contact">Contact</Link>
+                                </li>&nbsp;
+                                <li className="nav-item active">
+                                    <Link className="btn btn-info" to="/projects">Projects</Link>
+                                </li>&nbsp;
+                            </ul>
+                        </div>
+                    </nav>
+                    <Switch>
+                        <Route path="/home">
+                            <Home />
+                        </Route>
+                        <Route path="/about">
+                            <About />
+                        </Route>
+                        <Route path="/contact">
+                            <Contact />
+                        </Route>
+                        <Route path="/projects">
+                            <Projects />
+                        </Route>
+
+                    </Switch>
+
+                </Router>
+
+            </>
+        );
+    }
+}
+
+export default NApp;
+
+///
+
+import React from "react";
+
+function Home(props) {
+    return <h1 className="alert alert-danger">Welcome to home component</h1>
+}
+
+export default Home;
+
+//
+
+import React from "react";
+
+function About(props) {
+    return <h1 className="alert alert-success">Welcome to about us component</h1>
+}
+
+export default About;
+
+///
+
+import React from "react";
+
+function Contact(props) {
+    return <h1 className="alert alert-info">Welcome to Contact component</h1>
+}
+
+export default Contact;
+
+//
+
+import React from "react";
+
+function Projects(props) {
+    return <h1 className="alert alert-warning">Welcome to Projects component</h1>
+}
+
+export default Projects;
+
+///
+
+ <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+
+///
+
+import React from "react";
+
+class PApp extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            aRes: 0,
+            mRes: 0
+        }
+    }
+
+    componentDidMount() {
+        import('./myfun').then(a => this.setState({ aRes: a.add(21, 22) }));
+        import('./myfun').then(b => this.setState({ mRes: b.mul(34, 5) }));
+    }
+
+
+    render() {
+        return (
+            <>
+                Sum of the numbers is :<label className="alert alert-primary">{this.state.aRes}</label>
+                <br /><br />
+                Product of the numbers is :<label className="alert alert-primary">{this.state.mRes}</label>
+            </>
+        );
+    }
+}
+
+export default PApp;
+
+///
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import { createStore } from 'redux';
+import reducer from './reducers';
+import { Provider } from 'react-redux';
+
+
+const store = createStore(reducer,
+  Window.__REDUX_DEVTOOLS_EXTENSION && Window.__REDUX_DEVTOOLS_EXTENSION__()
+);
+
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
+
+///
+
+
+const reducer = (state = '', action) => {
+    switch (action.type) {
+        case 'INCREMENT':
+            return 'Ratammahatta';
+        case 'DECREMENT':
+            return 'Ahura Mazda';
+        default:
+            return 'Continental Treat';
+    }
+}
+
+export default reducer;
+
+///
+
+export function increment() {
+    return {
+        type: 'INCREMENT'
+    }
+}
+
+export function decrement() {
+    return {
+        type: 'DECREMENT'
+    }
+}
+
+///
+
+import React from "react";
+
+class MyComp extends React.Component {
+    render() {
+        const { counter, increment, decrement } = this.props;
+        return (
+            <>
+                <button onClick={increment}>Send</button>
+                <button onClick={decrement}>Recieve</button>
+
+                <br />
+                The value in the store is <div style={{ backgroundColor: 'navajowhite', color: 'royalblue' }}>
+                    {counter}
+                </div>
+            </>
+        );
+    }
+}
+
+export default MyComp;
+
+///
+
+import { connect } from 'react-redux';
+import { increment, decrement } from './actions/index';
+import MyComp from './MyComp';
+
+//function is to copy value from store and send it to component
+const mapStateToProps = (state) => {
+    return {
+        counter: state
+    }
+}
+
+//maps ui actions with the methods in actions index file
+const mapDispatchToProps = (dispatch) => {
+    return {
+        increment: () => dispatch(increment()),
+        decrement: () => dispatch(decrement())
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(MyComp);
+
+
+///
+
+import React from "react";
+
+class MyForm extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            name: '',
+            email: '',
+            mobile: '',
+            storeval: ''
+        }
+        this.onCha = this.onCha.bind(this);
+        this.onSub = this.onSub.bind(this);
+    }
+
+
+    onCha(e) {
+        const a = e.target.name;
+        const b = e.target.value;
+        this.setState({ [a]: b });
+    }
+
+    onSub(e) {
+        e.preventDefault();
+        const { increment } = this.props;
+        let regist = new Regist(this.state.name, this.state.email, this.state.mobile);
+        increment(JSON.stringify(regist));
+        alert(JSON.stringify(regist));
+    }
+
+    render() {
+        return (
+            <>
+                <form onSubmit={this.onSub}>
+                    <table>
+                        <tr>
+                            <td>Name</td>
+                            <td><input type="text" name="name" onChange={this.onCha} /></td></tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="text" name="email" onChange={this.onCha} /></td></tr>
+                        <tr>
+                            <td>Mobile</td>
+                            <td><input type="text" name="mobile" onChange={this.onCha} /></td></tr>
+                        <tr><td><input type="submit" value="Save" /></td>
+                            <td><input type="reset" value="Cancel" /></td></tr>
+                    </table>
+                </form>
+
+            </>
+        );
+    }
+
+///
+
+import { connect } from 'react-redux';
+import { increment, decrement } from './actions/index';
+import MyForm from './MyForm';
+
+//function is to copy value from store and send it to component
+const mapStateToProps = (state) => {
+    return {
+        counter: state
+    }
+}
+
+//maps ui actions with the methods in actions index file
+const mapDispatchToProps = (dispatch) => {
+    return {
+        increment: (x) => dispatch(increment(x)),
+        decrement: () => dispatch(decrement())
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(MyForm);
+
+
+////
+
+let arr = [];
+    fetch('https://jsonplaceholder.typicode.com/todos').then(a => a.json()).then(b => arr = b);
+
+///
+
+increment: (x) => dispatch(increment(JSON.stringify(arr))),
+
+///
+
+
+
+}
+
+class Regist {
+    constructor(name, email, mobile) {
+        this.name = name;
+        this.email = email;
+        this.mobile = mobile;
+    }
+}
+
+
+
+export default MyForm;
+
+///
+
+
+import React from "react";
+
+function reducer(state = { vehicle: '' }, action) {
+
+    switch (action.type) {
+        case "Car":
+            return {
+                vehicle: 'Its a car my own car'
+            }
+        case "Bike":
+            return {
+                vehicle: 'Its a bike my own bike'
+            }
+
+        default:
+            return "NOTHING"
+    }
+}
+
+export default reducer;
+
+import React from "react";
+
+function reducer(state = { vehicle: '' }, action) {
+
+    switch (action.type) {
+        case "Car":
+            return {
+                vehicle: 'Its a car my own car'
+            }
+        case "Bike":
+            return {
+                vehicle: 'Its a bike my own bike'
+            }
+
+        default:
+            return "NOTHING"
+    }
+}
+
+export default reducer;
+
+///
+TESTING
+///
+
+import { render, screen } from '@testing-library/react';
+import App from './App';
+import { addNum } from './myfin';
+
+test('tests the text', () => {
+  render(<App />);
+  expect(2).toBeLessThanOrEqual(4 - 2);
+});
+
+test('checking the function output', () => {
+  expect(addNum(2, 3)).toBe(5);
+});
+
+test('Should have the link on the page', () => {
+  alert(render(<App />).container());
+  expect(1 + 2).toBeGreaterThan(2).toBeTruthy();
+});
+
+
